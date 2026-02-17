@@ -1,0 +1,79 @@
+/* service-widgets */
+.service-widgets {
+    @media (max-width:991px) {
+        max-width: 400px;
+    }
+    .widget {
+        margin-bottom: 40px;
+
+        h3 {
+            color: $heading-color;
+            font-family: $heading-font;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                content: '';
+                max-width: 200px;
+                width: 100%;
+                border-bottom: 1px dashed $theme-primary-color;
+            }
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                content: '';
+                max-width: 100px;
+                width: 100%;
+                border-bottom: 1px dashed $theme-primary-color;
+            }
+        }
+    }
+
+    .service-widget {
+
+        ul {
+            li {
+                a {
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    position: relative;
+                    padding-left: 20px;
+                    transition: all .3s ease-in-out;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 50%;
+                        width: 6px;
+                        height: 6px;
+                        background: $white;
+                        transform: translateY(-50%);
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        color: $theme-primary-color;
+
+                        &::before {
+                            background: $theme-primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
