@@ -69,6 +69,9 @@ Best practices for choosing accessible color schemes.
 ## Typography
 Font selection and typography guidelines for web portfolios.
 
+## Hosting Options
+Recommended hosting platforms for portfolio deployment.
+
 ## Testing
 All templates include testing documentation.
 
