@@ -1,0 +1,26 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700|Roboto+Slab:300,400,500&display=swap');
+
+// fonts
+$base-font-size: 16;
+$base-font: 'Muli', sans-serif;
+$heading-font: 'Roboto Slab', serif;
+
+
+
+// color
+$dark-gray: #2a2a2a;
+$white: #fff;
+$black: #000;
+$nut: #c9b38c;
+$blue: #262b3e;
+$mid-blue: #687693;
+
+$theme-primary-color: $nut;
+$theme-secondary-color: $blue;
+$body-bg-color: $white;
+$section-bg-color: #edecec;
+$text-color: $mid-blue;
+$heading-color: $blue;

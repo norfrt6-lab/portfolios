@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+  #404 page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#13.1  error-404-section
+--------------------------------------------------------------*/
+.error-404-section {
+  .error {
+    width: 50%;
+    float: left;
+
+    @include media-query(991px) {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 200px;
+      font-size: calc-rem-value(200);
+      margin: 0;
+
+      @include media-query(991px) {
+        font-size: 150px;
+        font-size: calc-rem-value(150);
+      }
+
+      @include media-query(767px) {
+        font-size: 100px;
+        font-size: calc-rem-value(100);
+      }
+    }
+  }
+
+  .error-message {
+    width: 50%;
+    float: left;
+    margin-top: 40px;
+
+    @include media-query(991px) {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-size: calc-rem-value(20);
+      font-weight: 400;
+      margin: 0 0 0.8em;
+    }
+
+    p {
+      margin-bottom: 1.8em;
+    }
+  }
+}

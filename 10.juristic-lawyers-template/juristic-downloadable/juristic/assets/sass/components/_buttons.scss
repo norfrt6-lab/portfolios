@@ -1,0 +1,92 @@
+.theme-btn {
+	background-color: $theme-primary-color;
+	color: $white;
+	font-weight: 700;
+	padding: 16px 30px;
+	border: 0;
+	@include rounded-border(0);
+	text-transform: capitalize;
+	display: inline-block;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($theme-primary-color, 10%);
+		color: $white;
+	}
+
+	@include media-query(991px) {
+		font-size: 15px;
+		font-size: calc-rem-value(15);
+		padding: 14px 25px;
+	}
+
+	@include media-query(767px) {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		padding: 12px 20px;
+	}
+}
+
+.view-cart-btn {
+    background: $theme-primary-color;
+    width: 140px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	&:hover {
+		background-color: darken($theme-primary-color, 10%);
+		color: $white;
+	}
+}
+
+.theme-btn-s2 {
+	background-color: $white;
+	color: $heading-color;
+	font-weight: 700;
+	font-size: 15px;
+	font-size: calc-rem-value(15);
+	padding: 13px 25px;
+	border: 0;
+	@include rounded-border(0);
+	text-transform: capitalize;
+	display: inline-block;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($theme-primary-color, 10%);
+		color: $white;
+	}
+
+	@include media-query(991px) {
+		font-size: 15px;
+		font-size: calc-rem-value(15);
+		padding: 12px 22px;
+	}
+
+	@include media-query(767px) {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		padding: 12px 20px;
+	}
+}
+
+.theme-btn-s3 {
+	@extend .theme-btn-s2;
+	
+	padding: 16px 25px;
+
+	@include media-query(991px) {
+		padding: 12px 22px;
+	}
+
+	@include media-query(767px) {
+		padding: 12px 20px;
+	}
+}

@@ -1,0 +1,63 @@
+/******************************
+	#page title
+******************************/
+.page-title {
+	@include background-style("../images/page-title.jpg", center center, cover, no-repeat, local);
+	width: 100%;
+	height: 430px;
+	position: relative;
+	text-align: center;
+
+	@include media-query(991px) {
+		height: 300px;
+	}
+
+	.container {
+		height: 100%;
+		display: table;
+
+		@include widther(992px) {
+			padding-top: 100px;
+		}
+
+		> .row {
+			vertical-align: middle;
+			display: table-cell;
+		}
+	}
+
+
+	h2 {
+		font-size: 55px;
+		font-size: calc-rem-value(55);
+		color: $white;
+		margin: 0.5em 0 0.30em;
+
+		@include media-query(991px) {
+			font-size: 45px;
+			font-size: calc-rem-value(45);
+		}
+
+		@include media-query(767px) {
+			font-size: 40px;
+			font-size: calc-rem-value(40);
+		}
+	}
+
+	p {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		color: $white;
+		margin: 0;
+
+		@include media-query(991px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+		}
+
+		@include media-query(767px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+	}
+}
