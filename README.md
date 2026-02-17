@@ -22,3 +22,6 @@ This project is maintained by a team of 3 developers.
 ## License
 
 Please check individual template licenses in their respective directories.
+
+## Template Previews
+Preview images coming soon!
