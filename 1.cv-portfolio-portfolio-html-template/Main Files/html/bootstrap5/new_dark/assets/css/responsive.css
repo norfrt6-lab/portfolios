@@ -1,0 +1,412 @@
+/*============================
+Min - Height Query
+============================*/
+/*@media(min-height:320px) and (max-height:650px) {
+   .cv_menus_wrapper .cv_menus li a{
+
+   }
+}
+*/
+
+/*============================
+Min - Width Query
+============================*/
+
+@media (min-width:1500px) {
+    .cv_container{
+        max-width: 1504px;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+
+/*============================
+Max - Width Query
+============================*/
+
+@media (max-width: 1700px){
+
+	.cv_about_content{
+		max-width: 1055px;
+
+	}
+
+	.cv_about_info{
+		max-width: 560px;
+	}
+
+	.cv_about_box{
+		padding: 20px 25px 20px 75px;
+	}
+
+	.cv_edu_box{
+		max-width: 454px;
+	}
+
+	.cv_gallery_img{
+		height: auto;
+	}
+
+}
+
+@media (max-width:1499.98px){
+
+	.cv_banner_img .bnr-line {
+	    right: -148px;
+	    top: -135px;
+	}
+
+	.cv_banner_img .bnr-star {
+	    left: 198px;
+	}
+
+	.cv_banner_img .bnr-sqr {
+	    left: 365px;
+	}
+}
+
+@media (max-width:1399.98px){
+
+	.cv_edu_box{
+		max-width: 385px;
+		padding: 20px;
+	}
+
+	.cv_gallery_wrapper {
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+
+	.cv_gallery_item.item-2 .cv_gallery_small{
+		flex-direction: column;
+	}
+}
+
+@media (max-width:1199.98px){
+
+	.cv_menus_wrapper .cv_menus li a{
+		font-size: 45px;
+	}
+
+	.cv_banner_wrapper, .cv_about_wrapper{
+		padding: 100px 0;
+	}
+
+	.cv_banner_img::before {
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+
+	.cv_banner_img .bnr-line{
+		right: 95px;
+	}
+
+	.cv_banner_wrapper::before {	
+	    background-position: bottom;
+	    background-size: contain;
+	}
+
+	.cv_banner_text {
+	    margin-top: 30px;
+	    text-align: center;
+	}
+
+	.cv_banner_text a{
+		margin: 25px auto 40px;
+	}
+
+	.cv_banner_box{
+		max-width: 705px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.cv_header_menu{
+		padding: 70px 40px 70px 90px;
+	}
+
+	.cv_about_content{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cv_about_info {
+	    max-width: 100%;
+	    margin-top: 30px;
+	    text-align: center;
+	}
+
+	.cv_about_info .cv_about_btn {
+	    padding: unset;
+	    justify-content: center;
+	}
+
+	.cv_about_info h2{
+		margin-left: 83px;
+	}
+
+	.cv_about_box{
+		padding: 20px 25px;
+		border-radius: 10px;
+	}
+
+	.cv_edu_heading, .cv_do_heading, .cv_client_heading {
+    	text-align: center;
+	}
+
+	.cv_edu_heading h2, .cv_do_heading h2, .cv_client_heading h2{
+		margin-left: auto;
+	}
+
+	.cv_edu_heading p, .cv_client_heading p {
+	    margin: 30px auto 0;
+	}
+	
+	.cv_edu_box{
+		max-width: 50%;
+	}
+
+	.cv_exp_info{
+		justify-content: center;
+	}
+
+	.cv_do_heading p{
+		margin: 30px auto 20px;
+	}
+
+	.cv_do_img{
+		text-align: center;
+	}
+
+	.cv_do_box{
+		padding: 30px 20px;
+	}
+
+	.cv_map_info{
+		justify-content: flex-start;
+	}
+
+	.cv_address_box {
+	    flex-direction: column;
+	    text-align: center;
+	}
+
+}
+
+@media (max-width:991.98px){
+
+	.cv_banner_img .bnr-line {
+	    display: none;
+	}
+
+	.cv_client_img{
+		padding: 35px;
+	}
+}
+
+@media (max-width:767.98px){
+
+	section{
+		padding: 50px 0;
+	}
+
+	.cv_banner_wrapper, .cv_about_wrapper, .cv_portfolio_wrapper, .cv_do_wrapper, .cv_map_wrapper {
+    	padding: 100px 0 50px;
+	}
+
+	.cv_education_wrapper {
+    	padding-bottom: 50px;
+	}
+
+	.cv_menus_wrapper .cv_menus li {
+    	margin-bottom: auto;
+	}
+
+	.cv_menus_wrapper .cv_menus li a {
+    	font-size: 36px;
+	}
+
+	.cv_menus_wrapper .cv_menus li a::before{
+		display: none;
+	}
+
+	.cv_header_menu{
+		padding: 70px 35px;
+	}
+
+	.cv_header_social ul{
+		gap: 10px;
+	}
+
+	.cv_about_img .cv_about_exp, .cv_about_img .cv_about_rating {
+	    position: relative;
+	    top: unset;
+	    left: unset;
+	    right: unset;
+	    bottom: unset;
+	}
+
+	.cv_about_experience {
+	    display: flex;
+	    gap: 20px;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    margin-top: 30px;
+	}
+
+	.cv_about_info .cv_about_btn {
+	    justify-content: center;
+	    flex-wrap: wrap;
+	}
+
+	.cv_port_tab {
+	    flex-wrap: wrap;
+	    padding: 10px;
+	    justify-content: center;
+	}
+
+	.cv_gallery_small{
+		justify-content: center;
+	}
+
+	.cv_gallery_item.item-2{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cv_gallery_img.img-4{
+		min-width: fit-content;
+	}
+
+	.cv_gallery_img.img-1 img, .cv_gallery_img.img-2 img, .cv_gallery_img.img-5 img{
+		min-height: auto;
+	}
+
+	.cv_client_info::after, .cv_client_info::before, .cv_client_box:first-child::after{
+		display: none;
+	}
+
+	.cv_map_content iframe{
+		height: 340px;
+	}
+
+	.cv_contact_form textarea{
+		margin-top: 6px;
+	}
+}
+
+@media (max-width:575.98px){
+
+	.cv_banner_img .bnr-sqr, .cv_banner_img .bnr-star{
+		display: none;
+	}
+
+	.cv_banner_img::before {
+	    max-width: 100%;
+	    max-height: -webkit-fill-available;
+	    border-radius: 34px;
+	}
+
+	.cv_banner_text h1{
+		font-size: 40px;
+		min-height: 44px;
+	}
+
+	h2{
+		font-size: 28px;
+	}
+
+	h3 {
+    	font-size: 22px;
+	}
+
+	h4{
+		font-size: 20px;
+	}
+
+	h5{
+		font-size: 18px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	.cv_banner_box{
+		padding: 30px 20px;
+	}
+
+	.cv_header_menu{
+		padding: 35px;
+	}
+
+	.cv_menus_wrapper {
+	    flex-wrap: wrap;
+	    gap: 20px;
+	}
+
+	.cv_menus_wrapper .cv_menus li a{
+		font-size: 30px;
+	}
+
+	.cv_menus_wrapper .cv_menus li a::before{
+		width: 25px;
+		height: 2px;
+		left: -32px;
+	}
+
+	.cv_header_social::before{
+		display: none;
+	}
+
+	.cv_header_social ul {
+	    gap: 10px;
+	    margin-top: 20px;
+	}
+
+	.cv_header_social ul li a img{
+		max-width: 100%;
+		height: auto;
+	}
+
+	.cv_edu_heading{
+		text-align: left;
+	}
+
+	.cv_edu_info::before, .cv_edu_info::after{
+		display: none;
+	}
+
+	.cv_edu_box{
+		max-width: 100%;
+	}
+
+	.cv_exp_box{
+		padding: 20px;
+	}
+
+	.cv_award_text h1{
+		font-size: 36px;
+	}
+
+	.cv_skill_text h4{
+		font-size: 16px;
+	}
+
+	.cv_skill_text p{
+		font-size: 14px;
+	}
+}
+
+@media (max-width:349.98px){
+
+	.cv_header_menu{
+		padding: 0 15px;
+	}
+}
+
