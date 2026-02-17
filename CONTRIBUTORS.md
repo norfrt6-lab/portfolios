@@ -33,3 +33,9 @@ To get started with these portfolio templates, clone the repository and choose y
 - Modern web browser
 - Basic knowledge of HTML/CSS
 - Text editor or IDE
+
+## Features
+- Responsive design
+- Multiple template options
+- Easy customization
+- Modern UI/UX
