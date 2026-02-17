@@ -53,3 +53,6 @@ All templates include testing documentation.
 
 ## Security
 Security best practices are implemented in all templates.
+
+## Performance
+Performance optimizations included.
