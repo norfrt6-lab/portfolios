@@ -65,3 +65,6 @@ WCAG 2.1 compliance guidelines followed.
 
 ## Browser Support
 Cross-browser compatibility ensured.
+
+## Responsive Design
+Mobile-first approach implemented.
