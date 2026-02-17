@@ -9,3 +9,6 @@ This project is maintained by multiple contributors.
 
 ## Acknowledgments
 Special thanks to all contributors who helped improve this project.
+
+## Code of Conduct
+All contributors are expected to follow our community guidelines.
