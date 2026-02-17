@@ -39,3 +39,8 @@ To get started with these portfolio templates, clone the repository and choose y
 - Multiple template options
 - Easy customization
 - Modern UI/UX
+
+## Installation
+1. Clone this repository
+2. Navigate to your chosen template folder
+3. Open index.html in your browser
