@@ -54,6 +54,27 @@ Adding internationalization and localization support for global users.
 ## API Integration
 Guidelines for integrating external APIs and services.
 
+## Mobile Optimization
+Best practices for mobile-first responsive design.
+
+## SEO Guidelines
+Search engine optimization best practices for portfolio sites.
+
+## Animation Standards
+Guidelines for implementing smooth animations and transitions.
+
+## Color Palette
+Best practices for choosing accessible color schemes.
+
+## Typography
+Font selection and typography guidelines for web portfolios.
+
+## Hosting Options
+Recommended hosting platforms for portfolio deployment.
+
+## Version Control
+Git best practices for portfolio project management.
+
 ## Testing
 All templates include testing documentation.
 
