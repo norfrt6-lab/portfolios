@@ -7,6 +7,19 @@
 
 A collection of portfolio templates and designs.
 
+## Features
+
+- 🎨 Multiple professionally designed templates
+- 📱 Fully responsive layouts
+- 🚀 Easy to customize and deploy
+- 💻 Clean, semantic HTML5 code
+- 🎭 Multiple theme options (Dark, Light, Colorful)
+- ⚡ Optimized for performance
+- 🔧 Built with Bootstrap framework
+- 📝 Well-documented code
+- ♿ Accessibility-friendly
+- 🌐 Cross-browser compatible
+
 ## Contents
 
 ### 1. CV Portfolio Template
