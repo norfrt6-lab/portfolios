@@ -72,6 +72,9 @@ Font selection and typography guidelines for web portfolios.
 ## Hosting Options
 Recommended hosting platforms for portfolio deployment.
 
+## Version Control
+Git best practices for portfolio project management.
+
 ## Testing
 All templates include testing documentation.
 
