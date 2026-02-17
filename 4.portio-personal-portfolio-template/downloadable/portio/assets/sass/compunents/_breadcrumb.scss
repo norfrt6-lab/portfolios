@@ -1,0 +1,99 @@
+/* breadcrumb-section */
+.breadcrumb-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 500px;
+    overflow: hidden;
+    padding-top: 100px;
+
+    @media (max-width:991px) {
+        min-height: 400px;
+        padding-top: 50px;
+
+    }
+
+    .breadcrumb-wrap {
+
+        h2 {
+            color: #FFF;
+            font-family: $heading-font;
+            font-size: 60px;
+            font-weight: 400;
+            margin-bottom: 20px;
+
+            @media (max-width:767px) {
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+        }
+
+        ul {
+            li {
+                color: #C7C7C7;
+                font-family: $base-font;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 30px;
+                display: inline-block;
+                position: relative;
+                padding: 0 18px;
+
+                @media (max-width:575px) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: -5px;
+                    top: 50%;
+                    width: 6px;
+                    height: 6px;
+                    background: #C7C7C7;
+                    transform: translateY(-50%);
+                }
+
+                &:first-child {
+                    padding-left: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                a {
+                    color: #C7C7C7;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        color: $theme-primary-color;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .shape {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .shape-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
