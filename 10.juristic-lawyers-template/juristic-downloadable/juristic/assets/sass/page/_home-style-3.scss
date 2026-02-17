@@ -1,0 +1,235 @@
+/*--------------------------------------------------------------
+	#home-style-3
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#3.1	about-section-s3
+--------------------------------------------------------------*/
+.about-section-s3 {
+	@extend .about-section;
+	margin-top: 0;
+}
+
+
+/*--------------------------------------------------------------
+#3.2	award-section
+--------------------------------------------------------------*/
+.award-section {
+	padding-top: 0;
+
+	.award-slider {
+		@include media-query(767px) {
+			margin-top: 35px;
+		}
+	}
+
+	.award-slider img {
+		border: 10px solid transparentize($theme-primary-color, 0.5);
+	}
+
+	.owl-controls {
+		@include widther(1200px) {
+			position: absolute;
+			left: -602px;
+			margin: 0;
+		    bottom: 0;
+		}
+
+		@include media-query(1199px) {
+			margin-top: 45px;
+		}
+	}
+
+	.owl-theme .owl-dots .owl-dot span {
+		width: 8px;
+		height: 8px;
+		margin: 5px 5px;
+		background: $theme-primary-color;
+		opacity: 0.7;
+	}
+
+	.owl-theme .owl-dots .owl-dot.active span {
+		width: 25px;
+		opacity: 1;
+	}	
+}
+
+
+/*--------------------------------------------------------------
+#3.3	testimonials-section-s3
+--------------------------------------------------------------*/
+.testimonials-section-s3 {
+	@extend .testimonials-section-s2;
+	background: $white;
+
+	.grid p {
+	    color: $heading-color;
+	}
+
+	.client-info h3 + span {
+		color: $theme-secondary-color;
+	}
+}
+
+
+/*--------------------------------------------------------------
+#3.4	testimonials-section-s3
+--------------------------------------------------------------*/
+.cta-section-s3 {
+	@include background-style("../images/cta-bg.jpg", center center, cover, no-repeat, local);
+	padding: 115px 0;
+	text-align: center;
+	position: relative;
+
+	@include media-query(991px) {
+		padding: 100px 0;
+	}
+
+	@include media-query(767px) {
+		padding: 80px 0;
+	}
+
+	&:before {
+		content: "";
+		background: $theme-secondary-color;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0.9;
+	}
+
+	.cta-conetnt {
+		max-width: 530px;
+		margin: 0 auto;
+	}
+
+	h2,
+	p {
+		color: $white;
+	}
+
+	h2 {
+		font-size: 48px;
+		font-size: calc-rem-value(48);
+		font-weight: 400;
+		margin: 0 0 0.5em;
+
+		@include media-query(991px) {
+			font-size: 38px;
+			font-size: calc-rem-value(38);
+		}
+
+		@include media-query(767px) {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+		}
+	}
+
+	p {
+		margin-bottom: 2em;
+	}
+
+	a {
+		background-color: $white;
+		width: 65px;
+		height: 65px;
+		line-height: 65px;
+		text-align: center;
+		border-radius: 65px;
+		display: inline-block;
+		position: relative;
+		top: 5px;
+	    margin-left: 20px;
+
+		&:after {
+			content: "";
+			width: 0px;
+			height: 0px;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-left: 10px solid $theme-primary-color;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include center-by-translating();
+		}
+
+		&:before {
+			content: "";
+			width: calc(100% + 16px);
+			height: calc(100% + 16px);
+			position: absolute;
+			left: -8px;
+			top: -8px;
+			border: 1px solid #ececec;
+			border-radius: 50%;
+
+			@include media-query(767px) {
+				border: 1px solid #ececec;
+			}
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+#3.5	contact-section-s3
+--------------------------------------------------------------*/
+.contact-section-s3 {
+	@extend .contact-section-s2;
+	margin-top: 0;
+	padding-top: 110px;
+	padding-bottom: 0;
+	background: $white;
+
+	@include media-query(991px) {
+        padding-top: 100px;
+    }
+
+    @include media-query(767px) {
+        padding-top: 80px;
+    }
+
+	&:before {
+		display: none;
+	}
+
+	.section-title-s2 {
+		h2 {
+			color: $heading-color;
+		}
+
+		p {
+			color: $text-color;
+		}
+
+		.icon {
+		    box-shadow: 0 0 0 5px #fbf3f3;
+		}
+	}
+
+	.contact-info h4 {
+	    color: $theme-primary-color;
+	}
+
+	.contact-info p {
+	    color: $text-color;
+	}
+
+	form textarea,
+	form input,
+	form select {
+	    background: #fdfdfd;
+	    border-color: #eaeaea;
+	}
+}
+
+
+/*--------------------------------------------------------------
+#3.6	blog-section-s2
+--------------------------------------------------------------*/
+.blog-section-s2 {
+	@extend .blog-section;
+	padding-top: 34px;
+}

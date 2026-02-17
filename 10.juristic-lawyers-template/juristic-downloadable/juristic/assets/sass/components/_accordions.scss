@@ -1,0 +1,95 @@
+.theme-accordion-s1 {
+	margin-bottom: 0;
+
+	.panel-default {
+		background: transparent;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	.panel-heading {
+		background-color: transparent;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	.panel+.panel {
+		margin-top: 15px;
+	}
+
+	.panel-heading a {
+		background: $theme-primary-color;
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		font-weight: 600;
+		color: $white;
+		display: block;
+		padding: 18px 25px;
+		position: relative;
+
+		@include media-query(991px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			padding: 15px 25px;
+        }
+
+		@include media-query(767px) {
+			padding: 12px 15px;
+        }
+
+		&:before {
+			font-family: "themify";
+			content: "\e64b";
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			position: absolute;
+			right: 25px;
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+			@include transition-time(0.3s);
+
+			@include media-query(991px) {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+				right: 20px;
+	        }
+		}
+
+		&:focus {
+			text-decoration: none;
+		}
+	}
+
+	.panel-heading .collapsed {
+		background-color: #fff;
+		color: $heading-color;
+		box-shadow: 0px 5px 15px 0px rgba(68, 68, 68, 0.1);
+	}
+
+	.panel-heading .collapsed:before {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	.panel-heading+.panel-collapse>.panel-body {
+		background-color: #fff;
+		border: 0;
+		padding: 40px 25px 15px;
+		box-shadow: 0px 5px 15px 0px rgba(68, 68, 68, 0.1);
+
+		@include media-query(991px) {
+			padding: 20px 25px 10px;
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+
+		@include media-query(767px) {
+			padding: 15px 15px 8px;
+		}
+
+		p {
+			margin-bottom: 1.3em;
+		}
+	}
+}

@@ -1,0 +1,220 @@
+/*--------------------------------------------------------------
+	#service single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#7.1	service-single-section
+--------------------------------------------------------------*/
+.service-single-section {
+	.service-single-content {
+		@include widther(1200px) {
+			padding-left: 20px;
+		}
+
+		.service-pic {
+			margin: 50px 0;
+		}
+
+		.theme-btn {
+			margin-top: 20px;
+		}
+
+		h2 {
+			font-size: 40px;
+			font-size: calc-rem-value(40);
+			margin: 0 0 0.7em; 
+			text-transform: capitalize;
+
+			@include media-query(991px) {
+				font-size: 35px;
+				font-size: calc-rem-value(35);
+			}
+
+			@include media-query(767px) {
+				font-size: 30px;
+				font-size: calc-rem-value(30);
+			}
+		}
+
+		h3 {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+			font-weight: 400;
+			text-transform: capitalize;
+			margin: 1.9em 0 1em;
+		}
+
+		p {
+			margin-bottom: 1.3em;
+		}
+
+		ul {
+			list-style: none;
+
+			@include media-query(767px) {
+				font-size: 15px;
+				font-size: calc-rem-value(15);
+			}
+
+			li {
+				position: relative;
+				padding-left: 25px;
+				line-height: 1.7em;
+				color: #121212;
+			}
+
+			> li + li {
+				margin-top: 8px;
+			}
+
+			li i {
+				display: inline-block;
+				color: $theme-primary-color;
+				position: absolute;
+				left: 0;
+				top: 5px;
+			}
+		}
+
+		.service-features {
+			overflow: hidden;
+
+			ul {
+				width: 50%;
+				display: inline-block;
+				float: left;
+
+				@include media-query(767px) {
+					width: 100%;
+					float: none;
+					display: block;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	/*** service single tab ***/
+	.service-single-tab {
+		margin: 60px 0;
+
+		@include media-query(991px) {
+			margin: 40px 0;
+		}
+	}
+
+	.service-single-tab .nav {
+		overflow: hidden;
+		margin: 0;
+
+		li {
+			float: left;
+			padding-left: 0;
+		}
+
+		> li + li {
+			margin-top: 0;
+			margin-left: 3px;
+			@include media-query(767px) {
+				margin-left: 1px;
+			}
+		}
+
+		a {
+			background: $white;
+			font-size: 14px;
+			font-size: calc_rem_value(14);
+			font-weight: 700;
+			color: $heading-color;
+			padding: 10px 25px;
+			border: 1px solid transparentize($theme-primary-color, 0.5);
+
+			@include media-query(767px) {
+				font-size: 13px;
+				font-size: calc_rem_value(13);
+				padding: 8px 12px;
+				text-transform: none;
+			}
+
+			@include media-query(350px) {
+				padding: 8px;
+			}
+		}
+
+		.active a,
+		a:hover {
+			background: $theme-primary-color;
+			color: $white;
+		}
+	}
+
+	.tab-content {
+		padding: 35px 40px;
+		box-shadow: 0px 9px 57px 0px rgba(0, 0, 0, 0.13);
+
+
+		@include media-query(767px) {
+			padding: 25px 20px;
+		}
+
+		.tab-pane p {
+			margin-bottom: 20px;
+
+			@include media-query(767px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.tab-pane p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+
+	.service-features-grids {
+		box-shadow: 0px 3px 17.85px 3.15px rgba(0, 0, 0, 0.05);
+		margin: 60px 0;
+
+		.grid {
+			width: 33.33%;
+			float: left;
+			padding: 40px 30px;
+			border-right: 1px solid #f1f1f1;
+
+			@include media-query(767px) {
+				width: 100%;
+				float: none;
+				border-right: 0;
+				border-bottom: 1px solid #f1f1f1;
+				padding: 30px 25px;
+			}
+		}
+
+		.grid:last-child {
+			border-right: 0;
+
+			@include media-query(767px) {
+				border-bottom: 0;
+			}
+		}
+
+		p {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			margin: 0;
+		}
+
+		.fi:before {
+			font-size: 45px;
+			font-size: calc-rem-value(45);
+			color: $theme-primary-color;
+		}
+
+		h4 {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: 400;
+			margin: 0.7em 0;
+		}
+	
+	}
+}

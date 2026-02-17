@@ -1,0 +1,472 @@
+/*--------------------------------------------------------------
+	#shop single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#12.1	shop-single-section
+--------------------------------------------------------------*/
+.shop-single-section {
+	/*** product slider ***/
+	.shop-single-slider {
+		.slider-for {
+			text-align: center;
+
+			img {
+				display: inline-block;
+			}
+		}
+
+		.slider-nav {
+			padding: 0 25px;
+			margin-top: 35px;
+		}
+
+		.slider-nav > i {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			@include translatingY();
+			z-index: 100;
+		}
+
+		.slider-nav > i:hover {
+			cursor: pointer;
+		}
+
+		.slider-nav .nav-btn-rt {
+			left: auto;
+			right: 0;
+		}
+
+		.slider-nav .slick-slide {
+			text-align: center;
+			img {
+				display: inline-block;
+			}
+		}
+	}
+
+	.product-details {
+		padding: 30px 30px 93px;
+
+		@include media-query(1199px) {
+			padding: 40px 30px 85px;
+		}
+
+		@include media-query(991px) {
+			margin-top: 45px;
+			padding: 40px 30px;
+		}
+
+		@include media-query(767px) {
+			padding: 0;
+		}
+
+		h2 {
+			font-size: 28px;
+			font-size: calc-rem-value(28);
+			line-height: 1.4em;
+			margin: 0 0 0.33em;
+
+			@include media-query(767px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+		}
+
+		.price {
+			font-size: 36px;
+			font-size: calc-rem-value(36);
+			color: $theme-primary-color;
+			margin: 7px 0 14px;
+
+			@include media-query(991px) {
+				font-size: 30px;
+				font-size: calc-rem-value(30);
+			}
+
+			@include media-query(767px) {
+				font-size: 25px;
+				font-size: calc-rem-value(25);
+			}
+
+			.old {
+				font-size: 24px;
+				font-size: calc-rem-value(24);
+				font-weight: normal;
+				color: lighten($text-color, 20%);
+				text-decoration: line-through;
+				display: inline-block;
+				margin-left: 5px;
+
+				@include media-query(991px) {
+					font-size: 20px;
+					font-size: calc-rem-value(20);
+				}
+
+				@include media-query(767px) {
+					font-size: 18px;
+					font-size: calc-rem-value(18);
+				}
+			}
+		}
+
+		p {
+			margin-bottom: 1.3em;
+		}
+
+		p:last-child {
+			margin: 0;
+		}
+
+		/*** product option ***/
+		.product-option {
+			margin-top: 45px;
+		}
+
+		.product-option .product-row {
+			overflow: hidden;
+
+			button:after {
+				display: none;
+			}
+		}
+
+		.product-option .product-row > div {
+			height: 35px;
+			display: inline-block;
+			float: left;
+		}
+
+		.product-option .product-row > div + div {
+			margin-left: 15px;
+		}
+
+		.product-option .product-row > div:first-child {
+			width: 85px;
+		}
+
+		.product-option .product-row > div:last-child .theme-btn:hover {
+			background: $theme-primary-color;
+			border-color: $theme-primary-color;
+			color: $white;
+		}
+
+		.product-option .theme-btn {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			padding: 0 20px;
+			height: 35px;
+			line-height: 27px;
+			outline: 0;
+
+			&:hover {
+				background-color: $theme-primary-color;
+				color: $white;
+				border-color: $theme-primary-color;
+			}
+
+			@include media-query(767px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+			}
+
+			&:before {
+				display: none;
+			}
+		}
+
+		.product-option .heart-btn i {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+
+		.product-option .product-row > div:last-child .theme-btn {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+
+		#product-count {
+			border-radius: 0;
+			border: 1px solid lighten($black, 90%);
+		}
+
+		#product-count:focus {
+			box-shadow: none;
+			outline: none;
+		}
+
+		.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up,
+		.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+			border-radius: 0;
+			border-color: lighten($black, 90%);
+
+			&:hover {
+				background-color: $theme-primary-color;
+				color: $white;
+			}
+		}
+	}
+
+	/*** product info ***/
+	.product-info {
+		margin-top: 75px;
+
+		h4 {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			font-weight: 400;
+			margin: 0;
+			line-height: 1.7em;
+		}
+
+		p {
+			margin-bottom: 1.3em;
+		}
+
+		.tab-pane p:last-child {
+			margin-bottom: 0;
+		}
+
+		/*** tabs ***/
+		.nav-tabs {
+			border: 0;
+
+			@include media-query(767px) {
+				margin-bottom: 20px;
+			}
+		}
+
+		.nav-tabs li {
+			border: 2px solid #efefef;
+			margin-right: 1px;
+		}
+
+		.nav-tabs li.active a {
+			border: 0;
+			outline: 0;
+		}
+
+		.nav-tabs a {
+			font-weight: 700;
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			color: $text-color;
+			border: 0;
+			border-radius: 0;
+			margin: 0;
+			display: block;
+			padding: 12px 20px 11px;
+
+			@include media-query(767px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+				font-weight: normal;
+				padding: 10px 10px 8px;
+				text-transform: none;
+			}
+		}
+
+		.nav-tabs a:hover,
+		.nav-tabs .active a {
+			background: $theme-primary-color;
+			color: $white;
+		}
+
+		.nav-tabs .active,
+		.nav-tabs li:hover {
+			border-color: $theme-primary-color;
+		}
+
+		.tab-content {
+			border: 2px solid #efefef;
+			padding: 35px 25px;	
+			margin-top: -1px;	
+
+			@include media-query(767px) {
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}	
+		}
+
+		/*** client rv ***/
+		.client-rv {
+			overflow: hidden;
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.client-pic {
+				width: 60px;
+				float: left;
+
+				@include media-query(767px) {
+					width: 100%;
+					float: none;
+					margin-bottom: 10px;
+				}
+			}
+
+			.details {
+				width: calc(100% - 80px);
+				float: right;
+				@include media-query(767px) {
+					width: 100%;
+					float: none;
+				}
+			}
+
+			.name-rating-time {
+				border-bottom: 1px solid lighten($black, 90%);
+
+				@include media-query(767px) {
+					padding-bottom: 3px;
+				}
+			}
+
+			.name-rating-time > div,
+			.name-rating > div {
+				display: inline-block;
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+
+				@include media-query(767px) {
+					font-size: 12px;
+					font-size: calc-rem-value(12);
+					display: block;
+				}
+			}
+
+			.rating {
+				font-size: 12px;
+				color: $theme-primary-color;
+				padding-left: 12px;
+
+				@include media-query(767px) {
+					padding-left: 0;
+					margin: 4px 0 7px;
+				}
+			}
+
+			.name-rating-time .time {
+				float: right;
+				color: lighten($black, 70%);
+				text-transform: uppercase;
+
+				@include media-query(767px) {
+					float: none;
+				}
+			}
+
+			.review-body {
+				padding-top: 12px;
+			}
+		}
+
+		/*** review form ***/
+		.review-form-wrapper {
+			@include widther(1200px) {
+				padding-left: 45px;
+			}
+		}
+
+		.review-form {
+			@include media-query(991px) {
+				margin-top: 45px;
+			}
+
+			h4 {
+				margin-bottom: 1.73em;
+				font-weight: 400;
+			}
+
+			form {
+				input,
+				textarea {
+					background: #fbfbfb;
+					border-radius: 0;
+					box-shadow: none;
+					height: 40px;
+					border: 2px solid #efefef;
+				}
+
+				input:focus,
+				textarea:focus {
+					box-shadow: none;
+					outline: none;
+				}
+
+				textarea {
+					height: 130px;
+				}
+
+				> div {
+					margin-bottom: 27px;
+				}
+
+				> div:last-child {
+					margin-bottom: 0;
+				}
+
+				.rating-wrapper > div {
+					display: inline-block;
+					@include media-query(767px) {
+						display: block;
+						float: none !important;
+					}
+				}
+
+				.rating-wrapper > div:last-child {
+					float: right;
+					@include media-query(767px) {
+						margin-top: 20px;
+					}
+				}
+
+				.rating a {
+					font-size: 14px;
+					color: lighten($black, 80%);
+					display: inline-block;
+					margin-right: 10px;
+
+					@include media-query(767px) {
+						font-size: 12px;
+						margin-right: 5px;
+					}
+				}
+
+				.rating a:last-child {
+					margin: 0;
+				}
+
+				.rating a:hover {
+					color: $theme-primary-color;
+				}
+
+				.theme-btn-s4 {
+					background-color: transparent;
+					color: #908f8f;
+					outline: 0;
+					box-shadow: none;
+
+					&:hover {
+						background-color: $theme-primary-color;
+						color: $white;
+					}
+
+					@include widther(767px) {
+						font-size: 15px;
+						font-size: calc-rem-value(15);
+						padding: 0 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.slider-nav .slick-slide:focus {
+		outline: none;
+	}
+}

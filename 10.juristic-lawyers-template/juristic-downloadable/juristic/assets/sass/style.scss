@@ -1,0 +1,160 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     Juristic - Lawyers and Law Firm HTML Template
+Version:        1.0.0
+Author:         themexshaper
+URL:            http://themeforest.net/user/themexshaper
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1	Theme Reset Style
+#0.2	Global Elements
+#0.3	header
+#0.4	hero-slider
+#0.5	footer
+#0.6	about-section
+#0.7	feature-section
+#0.8	service-section
+#0.9	case-studies-section
+#1.0	testimonials-section
+#1.1	cta-section
+#1.2	team-section
+#1.3	contact-section
+#1.4	blog-section
+
+
+--------------------------------------------------------------
+	#home-style-2
+--------------------------------------------------------------
+#2.1	about-section-s2
+#2.2	service-section-s2
+#2.3	case-studies-section-s2
+#2.4	fun-fact-section
+#2.5	testimonials-section-s2
+#2.6	cta-section-s2
+#2.7	contact-section-s2
+#2.8	partners-section
+
+
+--------------------------------------------------------------
+	#home-style-3
+--------------------------------------------------------------
+#3.1	about-section-s3
+#3.2	award-section
+#3.3	testimonials-section-s3
+#3.4	testimonials-section-s3
+#3.5	contact-section-s3
+#3.6	blog-section-s2
+
+
+--------------------------------------------------------------
+	#about page
+--------------------------------------------------------------
+#4.1	history-section
+
+
+--------------------------------------------------------------
+	#team single page
+--------------------------------------------------------------
+#5.1	team-sigle-section
+
+
+--------------------------------------------------------------
+	#project single page
+--------------------------------------------------------------
+#6.1	project-single-section
+
+
+--------------------------------------------------------------
+	#service single page
+--------------------------------------------------------------
+#7.1	service-single-section
+
+
+--------------------------------------------------------------
+	#contact page
+--------------------------------------------------------------
+#8.1	contact-pg-section
+
+
+--------------------------------------------------------------
+	#blog page
+--------------------------------------------------------------
+#9.1	blog-pg-section
+
+
+--------------------------------------------------------------
+	#blog single page
+--------------------------------------------------------------
+#10.1	blog-single-section
+
+
+--------------------------------------------------------------
+	#shop page
+--------------------------------------------------------------
+#11.1  shop-pg-section
+
+
+--------------------------------------------------------------
+	#shop single page
+--------------------------------------------------------------
+#12.1	shop-single-section
+
+
+--------------------------------------------------------------
+  #404 page
+--------------------------------------------------------------
+#13.1  error-404-section
+
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/service-single-widget";
+@import "components/blog-sidebar";
+@import "components/pagination";
+@import "components/accordions";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/about";
+@import "page/team-single";
+@import "page/project-single";
+@import "page/service-single";
+@import "page/contact";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/shop";
+@import "page/shop-single";
+@import "page/error-404";
+
+

@@ -1,0 +1,37 @@
+.sticky-header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: -300px;
+	z-index: 9999;
+	opacity: 0;
+	@include transition-time(0.7s);
+}
+
+.sticky-on {
+	opacity: 1;
+	top: 0;
+}
+
+.header-style-1 .sticky-header {
+	background-color: $theme-secondary-color;
+}
+
+.header-style-2 .sticky-header {
+	@include widther(992px) {
+		background: -webkit-linear-gradient(left, $theme-primary-color 50%, $white 50.1%);
+		background: -moz-linear-gradient(left, $theme-primary-color 50%, $white 50.1%);
+		background: -o-linear-gradient(left, $theme-primary-color 50%, $white 50.1%);
+		background: -ms-linear-gradient(left, $theme-primary-color 50%, $white 50.1%);
+		background: linear-gradient(left, $theme-primary-color 50%, $white 50.1%);
+		border-bottom: 1px solid #e3e3e3;
+		
+		.container-fluid {
+			border-top: 0;
+		}
+	}
+}
+
+.header-style-3 .sticky-header {
+	background: $white;
+}
