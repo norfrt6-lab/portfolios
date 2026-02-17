@@ -28,3 +28,8 @@ This project is licensed under the MIT License.
 
 ## Getting Started
 To get started with these portfolio templates, clone the repository and choose your preferred template.
+
+## Requirements
+- Modern web browser
+- Basic knowledge of HTML/CSS
+- Text editor or IDE
