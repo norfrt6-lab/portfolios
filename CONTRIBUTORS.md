@@ -22,3 +22,6 @@ All contributors are expected to follow our community guidelines.
 
 ## Support
 For support and questions, please open an issue on GitHub.
+
+## License
+This project is licensed under the MIT License.
