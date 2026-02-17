@@ -30,3 +30,4 @@ Preview images coming soon!
 Live demo links available soon!
 Update 1
 Update 2
+Update 3
