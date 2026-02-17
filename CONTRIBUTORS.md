@@ -47,3 +47,6 @@ To get started with these portfolio templates, clone the repository and choose y
 
 ## Credits
 Special thanks to all the designers and developers who contributed to these templates.
+
+## Testing
+All templates include testing documentation.
