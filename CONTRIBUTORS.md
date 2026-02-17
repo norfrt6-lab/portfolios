@@ -60,6 +60,9 @@ Best practices for mobile-first responsive design.
 ## SEO Guidelines
 Search engine optimization best practices for portfolio sites.
 
+## Animation Standards
+Guidelines for implementing smooth animations and transitions.
+
 ## Testing
 All templates include testing documentation.
 
