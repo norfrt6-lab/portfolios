@@ -1,5 +1,10 @@
 # Portfolios
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/norfrt6-lab/portfolios/graphs/commit-activity)
+[![GitHub stars](https://img.shields.io/github/stars/norfrt6-lab/portfolios.svg?style=social&label=Star)](https://github.com/norfrt6-lab/portfolios)
+
 A collection of portfolio templates and designs.
 
 ## Contents
