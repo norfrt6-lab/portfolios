@@ -63,6 +63,9 @@ Search engine optimization best practices for portfolio sites.
 ## Animation Standards
 Guidelines for implementing smooth animations and transitions.
 
+## Color Palette
+Best practices for choosing accessible color schemes.
+
 ## Testing
 All templates include testing documentation.
 
