@@ -51,6 +51,9 @@ Special thanks to all the designers and developers who contributed to these temp
 ## Localization
 Adding internationalization and localization support for global users.
 
+## API Integration
+Guidelines for integrating external APIs and services.
+
 ## Testing
 All templates include testing documentation.
 
