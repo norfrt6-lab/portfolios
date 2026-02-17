@@ -22,3 +22,28 @@ All contributors are expected to follow our community guidelines.
 
 ## Support
 For support and questions, please open an issue on GitHub.
+
+## License
+This project is licensed under the MIT License.
+
+## Getting Started
+To get started with these portfolio templates, clone the repository and choose your preferred template.
+
+## Requirements
+- Modern web browser
+- Basic knowledge of HTML/CSS
+- Text editor or IDE
+
+## Features
+- Responsive design
+- Multiple template options
+- Easy customization
+- Modern UI/UX
+
+## Installation
+1. Clone this repository
+2. Navigate to your chosen template folder
+3. Open index.html in your browser
+
+## Credits
+Special thanks to all the designers and developers who contributed to these templates.
