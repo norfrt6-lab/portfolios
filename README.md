@@ -20,6 +20,16 @@ A collection of portfolio templates and designs.
 - ♿ Accessibility-friendly
 - 🌐 Cross-browser compatible
 
+## Tech Stack
+
+- **HTML5** - Modern semantic markup
+- **CSS3** - Advanced styling and animations
+- **JavaScript** - Interactive features
+- **Bootstrap** - Responsive framework (v3 & v5)
+- **Typed.js** - Text animation library
+- **Font Awesome** - Icon library
+- **Google Fonts** - Typography
+
 ## Contents
 
 ### 1. CV Portfolio Template
