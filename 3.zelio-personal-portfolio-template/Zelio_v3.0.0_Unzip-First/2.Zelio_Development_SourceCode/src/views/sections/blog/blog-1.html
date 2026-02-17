@@ -1,0 +1,47 @@
+<!-- blog 1 -->
+<section class="section-blog-1 position-relative pt-120 pb-120">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7 me-auto">
+                <h3 class="ds-3 mt-3 mb-3 text-primary">Recent blog</h3>
+                <span class="fs-5 fw-medium text-200"> Explore the insights and trends shaping our industry </span>
+            </div>
+            <div class="col-lg-auto">
+                <a href="blog-list.html" class="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
+                    View more
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-8">
+            <!--prettier-ignore-->
+            @@loop('blog-card.html', [ 
+                { 
+                "image": "assets/imgs/blog/blog-1/img-1.png", 
+                "title": "5 UI/UX Trends to Watch in 2024", 
+                "description": "Stay ahead of the curve with these emerging trends in UI/UX design.", 
+                "date": "March 28, 2023 • 3 min read", 
+                "link": "blog-details.html", 
+                "tag": "App Design", 
+                },
+                { 
+                "image": "assets/imgs/blog/blog-1/img-2.png", 
+                "title": "The Importance of User Research", 
+                "description": "Stay ahead of the curve with these emerging trends in UI/UX design.", 
+                "date": "March 28, 2023 • 3 min read", 
+                "link": "blog-details.html", 
+                "tag": "Branding", 
+                },
+                { 
+                "image": "assets/imgs/blog/blog-1/img-3.png", 
+                "title": "The Role of Color Psychology", 
+                "description": "Stay ahead of the curve with these emerging trends in UI/UX design.", 
+                "date": "March 28, 2023 • 3 min read", 
+                "link": "blog-details.html", 
+                "tag": "Mockup",
+                }, 
+            ]
+            )
+        </div>
+    </div>
+</section>

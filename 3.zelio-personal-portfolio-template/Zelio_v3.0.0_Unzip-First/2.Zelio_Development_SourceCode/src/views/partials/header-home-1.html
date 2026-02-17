@@ -1,0 +1,38 @@
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg @@classList flex-nowrap z-999 p-0">
+        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+            <i class="ri-menu-2-line"></i>
+        </a>
+        <div class="container py-3 px-0">
+            <a class="navbar-brand d-flex main-logo align-items-center ms-lg-0 ms-md-5 ms-3" href="index.html">
+                <img src="assets/imgs/template/favicon.svg" alt="zelio" />
+                <span class="fs-4 ms-2">william.design</span>
+            </a>
+            <div class="d-none d-lg-flex">@@include("main-menu.html")</div>
+            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                <div class="d-md-flex d-none gap-3">
+                    <a href="http://facebook.com">
+                        <i class="ri-facebook-circle-fill fs-18"></i>
+                    </a>
+                    <a href="http://twitter.com">
+                        <i class="ri-twitter-x-fill fs-18"></i>
+                    </a>
+                    <a href="http://linkedin.com">
+                        <i class="ri-linkedin-fill fs-18"></i>
+                    </a>
+                    <a href="http://github.com">
+                        <i class="ri-github-fill fs-18"></i>
+                    </a>
+                </div>
+                <div class="burger-icon burger-icon-white border rounded-3">
+                    <span class="burger-icon-top"></span>
+                    <span class="burger-icon-mid"></span>
+                    <span class="burger-icon-bottom"></span>
+                </div>
+            </div>
+        </div>
+        @@include("dark-light-switcher.html")
+    </nav>
+    @@include("offcanvas.html") @@include("mobile-menu.html")
+</header>

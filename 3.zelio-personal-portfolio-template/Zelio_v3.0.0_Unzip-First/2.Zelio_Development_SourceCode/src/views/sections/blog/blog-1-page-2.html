@@ -1,0 +1,44 @@
+<!-- blog 1 page 2 -->
+<section id="blog" class="section-blog-2 position-relative pt-60 pb-60">
+    <div class="container">
+        <div class="text-center">
+            <div class="d-flex align-items-center justify-content-center">
+                <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                    <circle cx="2.5" cy="3" r="2.5" fill="#A8FF53" />
+                </svg>
+                <span class="text-linear-4 d-flex align-items-center"> Latest Posts </span>
+            </div>
+            <h3>From Blog</h3>
+        </div>
+        <div class="row mt-8">
+            <!--prettier-ignore-->
+            @@loop('blog-card-page-2.html', [ 
+                { 
+                "image": "assets/imgs/home-page-2/blog/img-1.png", 
+                "title": "Optimize Your Web Application for Speed", 
+                "description": "Stay ahead of the curve with these emerging trends in UI/UX design.", 
+                "date": "March 28, 2023 • 3 min read", 
+                "link": "#", 
+                "tag": "CEO", 
+                },
+                { 
+                "image": "assets/imgs/home-page-2/blog/img-2.png", 
+                "title": "Best Practices for Secure Web Development", 
+                "description": "Stay ahead of the curve with these emerging trends in UI/UX design.", 
+                "date": "March 28, 2023 • 3 min read", 
+                "link": "#", 
+                "tag": "Development", 
+                },
+                { 
+                "image": "assets/imgs/home-page-2/blog/img-3.png", 
+                "title": "10 JavaScript Frameworks for Web Development in 2024", 
+                "description": "Stay ahead of the curve with these emerging trends in UI/UX design.", 
+                "date": "March 28, 2023 • 3 min read", 
+                "link": "#", 
+                "tag": "Trending",
+                }, 
+            ]
+            )
+        </div>
+    </div>
+</section>
