@@ -66,6 +66,9 @@ Guidelines for implementing smooth animations and transitions.
 ## Color Palette
 Best practices for choosing accessible color schemes.
 
+## Typography
+Font selection and typography guidelines for web portfolios.
+
 ## Testing
 All templates include testing documentation.
 
