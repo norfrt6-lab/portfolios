@@ -1,0 +1,3049 @@
+@charset "utf-8";
+
+/*	Copyright (c) 2022 Marketify
+/*	Author: Marketify
+/*	This file is made for CURRENT TEMPLATE
+
+
+01)	TONNI BASE
+02) TONNI MOBILE MENU
+03) TONNI LEFTPART
+04) TONNI HERO HEADER
+05) TONNI ABOUT
+06) TONNI SERVICE
+07) TONNI PARTNERS
+08) TONNI PORTFOLIO
+09) TONNI SKILLS
+10) TONNI PRICING
+11) TONNI TESTIMONIALS
+12) TONNI NEWS
+13) TONNI CONTACT
+14) TONNI MAGIC CURSOR
+15) TONNI MEDIA QUERIES (FOR SMALL DEVIVES)
+
+
+/*---------------------------------------------------*/
+/*	01) TONNI BASE
+/*---------------------------------------------------*/
+
+a{
+	text-decoration: none;
+}
+:root{
+    --main-color: #86756C;
+    --extra-color: #AB5429;
+    --font-family: 'Open Sans', sans-serif;
+    --font-family-extra: 'Inter', serif;;
+    --font-family-reey: 'reeyregular';
+	
+}
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	overflow-x: hidden;
+	width: 100%;
+	font-family: var(--font-family);
+	font-size: 14px;
+	line-height: 30px;
+	letter-spacing: 0px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #F3F0EA;
+	color: var(--main-color);
+}
+
+svg{
+	fill: currentcolor;
+	width: 15px;
+	height: 15px;
+}
+img.svg{
+	width: 15px;
+	height: 15px;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body{
+  scrollbar-width: thin;
+  scrollbar-color: #AB5429 #F3F0EA;
+}
+body:-webkit-scrollbar-track {
+  background: #F3F0EA;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--extra-color);;
+  border-radius: 6px;
+  border: 3px solid #F3F0EA;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: var(--main-color);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: var(--main-color);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: var(--main-color);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: var(--main-color);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: var(--main-color);
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: var(--main-color);
+}
+
+.container{
+	max-width: 1250px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	height:auto;
+	padding:0px 40px;
+	position:relative;
+	clear:both;
+}
+.container.bigger{
+	max-width: 1700px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:600;
+	line-height: 1.3;
+	font-family: var(--font-family-extra);
+	color: #000;
+}
+
+h1 { font-size: 45px; }
+h2 { font-size: 36px; }
+h3 { font-size: 30px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+
+.tonni_tm_all_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.tonni_tm_all_wrap,
+.tonni_tm_all_wrap *{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+}
+#preloader:before,
+#preloader:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+#preloader:after{
+    left: auto;
+    right: 0;
+}
+#preloader .loader_line{
+    margin: auto;
+    width: 1px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+}
+.loader_line:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #fff;
+    -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+    -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+    animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+.loader_line:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #999999;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-animation: lineround 1200ms linear 0s infinite;
+    -o-animation: lineround 1200ms linear 0s infinite;
+    animation: lineround 1200ms linear 0s infinite;
+    animation-delay: 2000ms;
+}
+
+@keyframes lineheight{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+@keyframes lineround{
+    0%{
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100%{
+        -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        -o-transform: translateY(200%);
+        transform: translateY(200%);
+    }
+}
+
+/*hiding all*/
+.preloaded .loader_line:after{
+    opacity: 0;
+}
+.preloaded  .loader_line{
+    opacity: 0;
+    height: 100%!important;
+}
+.preloaded:before,
+.preloaded:after{
+    -webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+    -o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+    animation: preloadedzero 300ms ease-in-out 500ms forwards;
+}
+@keyframes preloadedzero{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+.tonni_tm_section{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+
+/*---------------------------------------------------*/
+/*	02) TONNI MOBILE MENU
+/*---------------------------------------------------*/
+
+.tonni_tm_mobile_menu{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 10;
+}
+.tonni_tm_mobile_menu .mobile_menu_inner{
+	width: 100%;
+	height: auto;
+	float: left;
+	clear: both;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding: 10px 20px 10px 20px;
+}
+.tonni_tm_mobile_menu .mobile_in{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tonni_tm_mobile_menu .mobile_in .logo img{
+	max-width: 90px;
+	max-height: 70px;
+}
+.tonni_tm_mobile_menu .trigger{
+	line-height: 0;
+}
+.tonni_tm_mobile_menu .dropdown{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #fff;
+	display: none;
+}
+.tonni_tm_mobile_menu .dropdown .dropdown_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 25px 20px;
+}
+.tonni_tm_mobile_menu .dropdown .dropdown_inner ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tonni_tm_mobile_menu .dropdown .dropdown_inner ul li{
+	margin: 0px;
+	float: left;
+	width: 100%;
+}
+.tonni_tm_mobile_menu .dropdown .dropdown_inner ul li a{
+	text-decoration: none;
+	color: #202020;
+	display: inline-block;
+	padding: 0px 0px;
+	font-weight: 500;
+	font-family: var(--font-family-extra);
+}
+.tonni_tm_mobile_menu .hamburger-inner, 
+.tonni_tm_mobile_menu .hamburger-inner:after, 
+.tonni_tm_mobile_menu .hamburger-inner:before{
+	width: 30px;
+	height: 2px;
+}
+.tonni_tm_mobile_menu .hamburger-box{
+	width: 30px;
+}
+.tonni_tm_mobile_menu .hamburger{
+	padding: 0px;
+}
+
+/*---------------------------------------------------*/
+/*	03) TONNI HEADER
+/*---------------------------------------------------*/
+
+.tonni_tm_header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	border-bottom: 1px solid rgba(171,84,41,.1);
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_header.animate{
+	background-color: #F3F0EA;
+}
+.tonni_tm_header .header_in{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tonni_tm_header .logo img{
+	max-width: 200px;
+	max-height: 100px;
+}
+.tonni_tm_header .menu{
+	position: relative;
+}
+.tonni_tm_header .menu ul{
+	margin: 0px;
+	list-style-type: none;
+	display: flex;
+}
+.tonni_tm_header .menu ul li{
+	margin: 0px 45px 0px 0px;
+}
+.tonni_tm_header .menu ul li:last-child{
+	margin-right: 0px;
+}
+.tonni_tm_header .menu ul li a{
+	font-size: 16px;
+	color: #000;
+	display: inline-block;
+	padding: 21px 0px 25px 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_header .menu ul li.current a{
+	color: var(--extra-color);;
+}
+.tonni_tm_header .menu ul li a:hover{
+	color: var(--extra-color);;
+}
+.tonni_tm_header .menu .ccc{
+	position: absolute;
+	bottom: -1px;
+	width: 0;
+	background-color: var(--extra-color);;
+	display: block;
+	height: 3px;
+	
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+.tonni_tm_header .follow{
+	display: flex;
+	align-items: center;
+}
+.tonni_tm_header .follow ul{
+	margin: 0px;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	padding-left: 13px;
+}
+.tonni_tm_header .follow ul li{
+	margin: 0px 30px 0px 0px;
+	line-height: 0;
+}
+.tonni_tm_header .follow ul li:last-child{
+	margin-right: 0px;
+}
+.tonni_tm_header .follow ul li a{
+	text-decoration: none;
+	color: #86756c;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_header .follow ul li a:hover{
+	color: #ab5429;
+}
+.tonni_tm_header .follow ul li .svg{
+	width: 13px;
+	height: 13px;
+}
+
+/*---------------------------------------------------*/
+/*	04) TONNI HERO
+/*---------------------------------------------------*/
+
+.tonni_tm_hero{
+	width: 100%;
+	min-height: 100vh;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.tonni_tm_hero .background{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.tonni_tm_hero .background .image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.tonni_tm_hero .background .overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+/*	background-color: rgba(0,0,0,.4);*/
+	z-index: 1;
+}
+.tonni_tm_hero .container{
+	z-index: 2;
+	height: 100vh;
+}
+.tonni_tm_hero .content{
+	width: 100%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+.tonni_tm_hero .content_in{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.tonni_tm_hero .name{
+	font-weight: 700;
+	font-size: 112px;
+	text-transform: uppercase;
+}
+.tonni_tm_hero .name span{
+	color: var(--extra-color);;
+}
+.tonni_tm_hero .welcome{
+	display: inline-block;
+	font-size: 18px;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 60px;
+}
+.tonni_tm_hero .welcome:before{
+	position: absolute;
+	content: "";
+	width: 70px;
+	height: 2px;
+	background-color: var(--extra-color);;
+	left: 100%;
+	margin-left: 2px;
+	bottom: 9px;
+}
+.tonni_tm_button{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.tonni_tm_button a{
+	font-family: var(--font-family-extra);
+	font-weight: 700;
+	color: #000;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_button a:hover{
+	color: var(--extra-color);;
+}
+.tonni_tm_button .svg{
+	position: relative;
+	margin-left: 6px;
+	top: 3px;
+	color: var(--extra-color);;
+}
+.tonni_tm_down{
+	position: absolute;
+	left: 28px;
+	bottom: 7%;
+}
+.tonni_tm_down svg{
+	width: 64px !important;
+	height: 64px !important;
+}
+.tonni_tm_down svg #wheel{
+	animation: scroll ease 2s infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(60px);
+    }
+}
+.tonni_tm_hero .play_button{
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 60px;
+}
+.tonni_tm_hero .play_button a{
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	border: 2px solid #DED2BD;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_hero .play_button a:hover{
+	background-color: #DED2BD;
+}
+.tonni_tm_hero .play_button a:before{
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7.5px 0 7.5px 15px;
+	border-color: transparent transparent transparent #000;
+	margin-left: 3px;
+}
+.tonni_tm_hero .svg{
+	color: transparent;
+}
+.tonni_tm_hero .shape1{
+	position: absolute;
+	bottom: 22%;
+	left: 7%;
+}
+.tonni_tm_hero .shape1 .svg{
+	width: 44px;
+	height: 44px;
+}
+.tonni_tm_hero .shape2{
+	position: absolute;
+	bottom: 3%;
+	left: 18.5%;
+}
+.tonni_tm_hero .shape2 .svg{
+	width: 70px;
+	height: 70px;
+}
+.tonni_tm_hero .shape3{
+	position: absolute;
+	top: 17%;
+	left: 30%;
+}
+.tonni_tm_hero .shape3 .svg{
+	width: 30px;
+	height: 30px;
+}
+.tonni_tm_hero .shape4{
+	position: absolute;
+	top: 36%;
+	left: 49%;
+}
+.tonni_tm_hero .shape4 .svg{
+	width: 45px;
+	height: 45px;
+}
+.tonni_tm_hero .shape5{
+	position: absolute;
+	bottom: 12%;
+	left: 40%;
+}
+.tonni_tm_hero .shape5 .svg{
+	width: 44px;
+	height: 44px;
+}
+.tonni_tm_hero .shape6{
+	position: absolute;
+	top: 27%;
+	right: 12%;
+}
+.tonni_tm_hero .shape6 .svg{
+	width: 44px;
+	height: 44px;
+}
+.tonni_tm_hero .shape7{
+	position: absolute;
+	bottom: 20%;
+	right: 9%;
+}
+.tonni_tm_hero .shape7 .svg{
+	width: 81px;
+	height: 81px;
+}
+.anim_circle{
+	animation: animCircle 15s infinite linear;
+}
+
+@keyframes animCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*---------------------------------------------------*/
+/*	05) TONNI ABOUT
+/*---------------------------------------------------*/
+
+.tonni_tm_about{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 150px;
+	margin-bottom: 100px;
+}
+.tonni_tm_about .about_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+}
+.tonni_tm_about .left{
+	width: 50%;
+	position: relative;
+}
+.tonni_tm_about .left .circle_shape{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.tonni_tm_about .left .circle_shape .svg{
+	width: 44px;
+	height: 44px;
+}
+.tonni_tm_about .left_inner{
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+.tonni_tm_about .year{
+	position: relative;
+}
+.tonni_tm_about .year h3{
+	font-size: 440px;
+	font-weight: 700;
+	letter-spacing: -20px;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url(..//img/about/1.png);
+	-webkit-text-stroke-width: 6px;
+	-webkit-text-stroke-color: #fff;
+	line-height: 335px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.tonni_tm_about .year .rounded{
+	position: absolute;
+	width: 260px;
+	height: 260px;
+	border-radius: 100%;
+	background-color: #ede8df;
+	left: 0px;
+	bottom: -50px;
+	z-index: -1;
+}
+.tonni_tm_about .year .rounded img{
+	position: absolute;
+	left: -110px;
+	top: -30px;
+}
+.tonni_tm_about .experience{
+	text-align: center;
+	margin-left: -35px;
+	position: relative;
+}
+.tonni_tm_about .experience h3{
+	font-size: 390px;
+	font-family: var(--font-family-reey);
+	color: var(--extra-color);;
+	line-height: 1;
+	line-height: 190px;
+	margin-bottom: 25px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	position: relative;
+	top: 70px;
+}
+.tonni_tm_about .experience p{
+	font-size: 50px;
+	line-height: 50px;
+	font-style: italic;
+	color: var(--extra-color);;
+	font-family: var(--font-family-reey);
+}
+.tonni_tm_about .experience .shape{
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	z-index: -1;
+}
+.tonni_tm_about .right{
+	width: 50%;
+	padding-left: 50px;
+}
+.tonni_tm_about .right .title{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+.tonni_tm_about .right .title span{
+	display: inline-block;
+	font-size: 18px;
+}
+.tonni_tm_about .right .title h3{
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.tonni_tm_about .right .text{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+}
+.dodo_progress{
+	width: 100%;
+	float: left;
+}
+.dodo_progress ul{
+	margin: 0px 0px 0px -80px;
+	list-style-type: none;
+}
+.dodo_progress ul li{
+	margin: 0px 0px 50px 0px;
+	float: left;
+	padding-left: 80px;
+	width: 33.3333%;
+}
+.dodo_progress ul li .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.dodo_progress .progress_inner{
+	width: 100%;
+}
+.dodo_progress .progress_inner .background{
+	background:rgba(181,168,142,.2);
+	width:100%;
+	min-width:100%;
+	position:relative;
+	height:30px;
+	border-radius: 10px;
+}
+.dodo_progress .progress_inner .background .bar_in{
+	height:100%;
+	background:var(--extra-color);;
+	width:0px;
+	overflow:hidden;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.dodo_progress .progress_inner .background .bar{
+	width:0px;
+	height:100%;
+}
+.dodo_progress .progress_inner .background .bar.open{
+	-webkit-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
+	-moz-animation:    wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
+	animation:         wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
+	width:100%;	
+}
+
+@-webkit-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
+@-moz-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
+@keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
+
+.dodo_progress .percent{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 12px;
+}
+.dodo_progress .percent .svg{
+	width: 24px;
+	height: 24px;
+}
+.dodo_progress .percent span{
+	display: inline-block;
+	font-weight: 600;
+	color: #000;
+	padding-left: 10px;
+}
+
+/*---------------------------------------------------*/
+/*	06) TONNI SERVICE
+/*---------------------------------------------------*/
+
+.tonni_tm_service{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.tonni_tm_service .service_in{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #EDE8DF;
+	padding: 100px 0px 120px 0px;
+	position: relative;
+}
+.tonni_tm_main_title{
+	width: 100%;
+	height: auto;
+}
+.tonni_tm_main_title .title{
+	margin-bottom: 13px;
+}
+.tonni_tm_main_title .title span{
+	display: inline-block;
+	margin-bottom: 2px;
+}
+.tonni_tm_main_title .title h3{
+	font-size: 32px;
+	font-weight: 700;
+}
+.tonni_tm_main_title[data-type="centered"]{
+	max-width: 550px;
+	margin: 0px auto;
+	text-align: center;
+}
+.tonni_tm_main_title[data-type="flex"]{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.tonni_tm_main_title[data-type="flex"] .title{
+	width: 50%;
+	margin-bottom: 0px;
+}
+.tonni_tm_main_title[data-type="flex"] .subtitle{
+	width: 50%;
+	padding-left: 100px;
+}
+.tonni_tm_service .service_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-top: 50px;
+	border-bottom: 1px solid rgba(0,42,58,.07);
+}
+.tonni_tm_service .service_list ul{
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.tonni_tm_service .service_list ul li{
+	margin: 0px 0px 50px 0px;
+	float: left;
+	padding-left: 50px;
+	width: 25%;
+}
+.tonni_tm_service .service_list ul li .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.tonni_tm_service .service_list ul li .svg{
+	width: 70px;
+	height: 70px;
+	margin-bottom: 35px;
+}
+.tonni_tm_service .service_list ul li .title{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+.tonni_tm_service .service_list ul li .title h3{
+	font-weight: 600;
+	color: #002A3A;
+	font-size: 20px;
+	margin-bottom: 4px;
+}
+.tonni_tm_service .service_list ul li .title span{
+	font-weight: 700;
+	color: var(--extra-color);;
+	text-transform: uppercase;
+	font-family: var(--font-family-extra);
+}
+.tonni_tm_service .shape{
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+}
+.tonni_tm_service .service_in .container{
+	z-index: 1;
+}
+.tonni_tm_service .shape .svg{
+	width: 100%;
+	height: 100%;
+	color: transparent;
+}
+
+/*---------------------------------------------------*/
+/*	07) TONNI PORTFOLIO
+/*---------------------------------------------------*/
+
+.tonni_tm_portfolio{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 90px;
+	padding-top: 110px;
+}
+.tonni_tm_portfolio .portfolio_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 50px;
+}
+.tonni_tm_portfolio .portfolio_list ul{
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+}
+.tonni_tm_portfolio .portfolio_list ul li{
+	margin: 0px 0px 30px 0px;
+	float: left;
+	padding-left: 30px;
+	width: 33.3333%;
+}
+.tonni_tm_portfolio .portfolio_list ul li .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.tonni_tm_portfolio .portfolio_list ul li .image{
+	position: relative;
+	overflow: hidden;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.tonni_tm_portfolio .portfolio_list ul li .image img{
+	position: relative;
+	opacity: 0;
+	min-width: 100%;
+}
+.tonni_tm_portfolio .portfolio_list ul li .image .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: scale(1) translateZ(0);
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_portfolio .list_inner:hover .image .main{
+	transform: scale(1.1) translateZ(0);
+}
+.tonni_tm_portfolio .portfolio_list .details{
+	width: 100%;
+	float: left;
+	background-color: #F8F5EF;
+	box-shadow: 0px 14px 20px rgba(187, 182, 173, 0.3);
+	padding: 20px 30px 28px 50px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: relative;
+}
+.tonni_tm_portfolio .portfolio_list .details .category{
+	display: inline-block;
+	font-family: var(--font-family-extra);
+	font-weight: 700;
+	color: var(--extra-color);;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	position: relative;
+}
+.tonni_tm_portfolio .portfolio_list .details .category:before{
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.1);
+	left: -50px;
+	bottom: 10px;
+}
+.tonni_tm_portfolio .portfolio_list .details .category:after{
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 2px;
+	background-color: var(--extra-color);;
+	left: -50px;
+	bottom: 10px;
+	z-index: 1;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_portfolio .list_inner:hover .category:after{
+	width: 40px;
+}
+.tonni_tm_portfolio .portfolio_list .details .title{
+	font-size: 20px;
+}
+.tonni_tm_portfolio .portfolio_list .details .svg{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 25px;
+	height: 25px;
+	opacity: .1;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_portfolio .list_inner:hover .details .svg{
+	opacity: 1;
+}
+.tonni_tm_full_link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 5;
+}
+.tonni_tm_modalbox{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100vh;
+	z-index: 20;
+	background-color: rgba(0,0,0,.9);
+	opacity: 0;
+	visibility: hidden;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_modalbox.opened{
+	opacity: 1;
+	visibility: visible;
+}
+.tonni_tm_modalbox .box_inner{
+	position: absolute;
+	top: 70px;
+	bottom: 70px;
+	width: 968px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #F3F0EA;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	margin-top: -20px;
+	border-radius: 10px;
+	transition-delay: .3s;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_modalbox.opened .box_inner{
+	opacity: 1;
+	visibility: visible;
+	margin-top: 0px;
+}
+.tonni_tm_modalbox .close{
+	position: fixed;
+	left: 100%;
+	top: 0px;
+	margin-left: 30px;
+	z-index: 10;
+}
+.tonni_tm_modalbox .close a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	color: #F3F0EA;
+	border:2px solid #F3F0EA;
+	border-radius: 10px;
+	position: relative;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_modalbox .close a:hover{
+	border-radius: 100%;
+}
+.tonni_tm_modalbox .close a i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.tonni_tm_modalbox .description_wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 50px;
+	overflow-y: scroll;
+	border-radius: 10px;
+}
+.tonni_tm_modalbox .description_wrap:before{
+	position: fixed;
+	content: "";
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	background-color: #F3F0EA;
+	z-index: 2;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.tonni_tm_modalbox .description_wrap:after{
+	position: fixed;
+	content: "";
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	background-color: #F3F0EA;
+	z-index: 2;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.tonni_tm_modalbox .description_wrap::-webkit-scrollbar{
+  	width: 11px;
+}
+.tonni_tm_modalbox .description_wrap{
+  scrollbar-width: thin;
+  scrollbar-color: #999 #F3F0EA;
+}
+.tonni_tm_modalbox .description_wrap:-webkit-scrollbar-track{
+  background: #F3F0EA;
+}
+.tonni_tm_modalbox .description_wrap::-webkit-scrollbar-thumb{
+  background-color: #999;
+  border-radius: 10px;
+  border: 3px solid #F3F0EA;
+}
+.tonni_tm_portfolio .hidden_content{
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: -11;
+}
+.tonni_tm_modalbox .popup_details{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.tonni_tm_modalbox .popup_details .top_image{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 37px;
+}
+.tonni_tm_modalbox .popup_details .top_image img{
+	position: relative;
+	min-width: 100%;
+	opacity: 0;
+}
+.tonni_tm_modalbox .popup_details .top_image .main{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 12px;
+}
+.tonni_tm_modalbox .portfolio_main_title{
+	width: 100%;
+	float: left;
+	margin-bottom: 23px;
+}
+.tonni_tm_modalbox .portfolio_main_title span{
+	display: inline-block;
+	font-family: var(--font-family-extra);
+}
+.tonni_tm_modalbox .portfolio_main_title span a{
+	text-decoration: none;
+	color: #86756c;
+}
+.tonni_tm_modalbox .portfolio_main_title h3{
+    font-size: 30px;
+	margin-bottom: 3px;
+}
+.tonni_tm_modalbox .main_details{
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	margin-bottom: 60px;
+}
+.tonni_tm_modalbox .main_details .textbox{
+	width: 70%;
+	padding-right: 40px;
+}
+.tonni_tm_modalbox .main_details .textbox p{
+	margin-bottom: 15px;
+}
+.tonni_tm_modalbox .main_details .textbox p:last-child{
+	margin-bottom: 0px;
+}
+.tonni_tm_modalbox .main_details .detailbox{
+	width: 30%;
+	padding-left: 40px;
+}
+.tonni_tm_modalbox .main_details .detailbox > ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tonni_tm_modalbox .main_details .detailbox > ul > li{
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+	float: left;
+}
+.tonni_tm_modalbox .main_details .detailbox > ul > li:last-child{
+	margin-bottom: 0px;
+}
+.tonni_tm_modalbox .main_details .detailbox .first{
+    font-weight: 500;
+	font-size: 16px;
+	display: block;
+	color: #000;
+	font-family: var(--font-family-extra);
+}
+.tonni_tm_modalbox .main_details .detailbox span{
+	font-family: var(--font-family-extra);
+}
+.tonni_tm_modalbox .main_details .detailbox span a{
+	text-decoration: none;
+	color: #7d7789;
+}
+.tonni_tm_modalbox .additional_images{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.tonni_tm_modalbox .additional_images ul{
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+}
+.tonni_tm_modalbox .additional_images ul li{
+	margin: 0px 0px 30px 0px;
+	float: left;
+	width: 50%;
+	padding-left: 30px;
+}
+.tonni_tm_modalbox .additional_images ul li:nth-child(3n-2){
+	width: 100%;
+}
+.tonni_tm_modalbox .additional_images ul li .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.tonni_tm_modalbox .additional_images ul li .my_image{
+	position: relative;
+}
+.tonni_tm_modalbox .additional_images ul li .my_image img{
+	opacity: 0;
+	min-width: 100%;
+}
+.tonni_tm_modalbox .additional_images ul li .my_image .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 12px;
+}
+
+/*---------------------------------------------------*/
+/*	08) TONNI TIMELINE
+/*---------------------------------------------------*/
+
+.tonni_tm_timeline{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 110px;
+}
+.tonni_tm_timeline .timeline_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #EDE8DF;
+	padding: 110px 0px 120px 0px;
+	position: relative;
+}
+.tonni_tm_timeline .timeline_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-top: 200px;
+	position: relative;
+}
+.tonni_tm_timeline .timeline_list .line{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 3px;
+	top: -77px;
+	bottom: 100px;
+	background-color: #E2D7C1;
+}
+.tonni_tm_timeline .timeline_list .line:before{
+	position: absolute;
+	content: "";
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	background-color: #E2D7C1;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.tonni_tm_timeline .timeline_list > ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tonni_tm_timeline .timeline_list > ul > li{
+	margin: 0px 0px 60px 0px;
+	width: 100%;
+	float: left;
+}
+.tonni_tm_timeline .timeline_list > ul > li:last-child{
+	margin-bottom: 0px;
+}
+.tonni_tm_timeline .timeline_list .items{
+	margin: 0px 0px 0px -40px;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tonni_tm_timeline .timeline_list .items li{
+	margin: 0px;
+	width: 33.3333%;
+	padding-left: 40px;
+	text-align: right;
+}
+.tonni_tm_timeline .timeline_list .items li:nth-child(2){
+	text-align: center;
+}
+.tonni_tm_timeline .timeline_list .items li .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.tonni_tm_timeline .timeline_list .items .image{
+	position: relative;
+}
+.tonni_tm_timeline .timeline_list .items .image img{
+	position: relative;
+	opacity: 0;
+	min-width: 100%;
+}
+.tonni_tm_timeline .timeline_list .items .image .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+.tonni_tm_timeline .timeline_list .items .year{
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	border-radius: 10px;
+	background-color: #F8F5EF;
+	display: inline-block;
+	padding: 0px 5px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_timeline .timeline_list .items:hover .year{
+	background-color: var(--extra-color);;
+}
+.tonni_tm_timeline .timeline_list .items .year span{
+	font-weight: 700;
+	color: #000;
+	font-family: var(--font-family-extra);
+	text-transform: uppercase;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_timeline .timeline_list .items:hover .year span{
+	color: #fff;
+}
+.tonni_tm_timeline .timeline_list .items .svg{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 5px;
+	left: auto;
+	right: 0px;
+}
+.tonni_tm_timeline .timeline_list .details{
+	width: 100%;
+	float: left;
+	position: relative;
+	padding-right: 100px;
+	padding-left: 0px;
+}
+.tonni_tm_timeline .timeline_list .title{
+	width: 100%;
+	float: left;
+	margin-bottom: 8px;
+}
+.tonni_tm_timeline .timeline_list .title h3{
+	font-size: 20px;
+	color: #002A3A;
+	margin-bottom: 5px;
+}
+.tonni_tm_timeline .timeline_list .title span{
+	color: var(--extra-color);;
+	font-weight: 700;
+	font-family: var(--font-family-extra);
+	text-transform: uppercase;
+}
+.tonni_tm_timeline .timeline_list > ul > li:nth-child(2n) .items{
+	flex-direction: row-reverse;
+}
+.tonni_tm_timeline .timeline_list > ul > li:nth-child(2n) .items li{
+	text-align: left;
+}
+.tonni_tm_timeline .timeline_list > ul > li:nth-child(2n) .items li:nth-child(2){
+	text-align: center;
+}
+.tonni_tm_timeline .timeline_list > ul > li:nth-child(2n) .items .svg{
+	left: 0px;
+	right: auto;
+}
+.tonni_tm_timeline .timeline_list > ul > li:nth-child(2n) .items .details{
+	padding-left: 100px;
+	padding-right: 0px;
+}
+.tonni_tm_timeline .svg{
+	color: transparent;
+}
+.tonni_tm_timeline .shape{
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+}
+.tonni_tm_timeline .shape .svg{
+	width: 100%;
+	height: 100%;
+}
+.tonni_tm_timeline .timeline_inner .container{
+	z-index: 1;
+}
+.tonni_tm_timeline .shape2{
+	position: absolute;
+	top: 250px;
+	left: 40px;
+}
+.tonni_tm_timeline .shape2 .svg{
+	position: absolute;
+	width: 140px;
+	height: 140px;
+}
+.tonni_tm_timeline .shape2{
+	position: absolute;
+	top: 250px;
+	left: 40px;
+}
+.tonni_tm_timeline .shape2 .svg{
+	position: absolute;
+	width: 140px;
+	height: 140px;
+}
+.tonni_tm_timeline .shape3{
+	position: absolute;
+	bottom: 180px;
+	left: 50px;
+}
+.tonni_tm_timeline .shape3 .svg{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+}
+.tonni_tm_timeline .shape4{
+	position: absolute;
+	top: 355px;
+	right: 140px;
+}
+.tonni_tm_timeline .shape4 .svg{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+}
+.tonni_tm_timeline .shape5{
+	position: absolute;
+	bottom: 45%;
+	right: 140px;
+}
+.tonni_tm_timeline .shape5 .svg{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+}
+
+/*---------------------------------------------------*/
+/*	09) TONNI PRICING
+/*---------------------------------------------------*/
+
+.tonni_tm_pricing{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 90px;
+}
+.tonni_tm_pricing .pricing_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-top: 65px;
+	position: relative;
+}
+.tonni_tm_pricing .pricing_list > ul{
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+}
+.tonni_tm_pricing .pricing_list > ul > li{
+	margin: 0px 0px 30px 0px;
+	float: left;
+	padding-left: 30px;
+	width: 33.3333%;
+}
+.tonni_tm_pricing .pricing_list > ul > li .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	border-radius: 10px;
+	background-color: #ede8df;
+	padding: 50px;
+}
+.tonni_tm_pricing .pricing_list > ul > li.centered{
+	position: relative;
+	margin-top: -20px;
+}
+.tonni_tm_pricing .pricing_list > ul > li.centered .list_inner{
+	padding-top: 70px;
+/*	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+}
+.tonni_tm_pricing .pricing_list > ul > li .title{
+	width: 100%;
+	float: left;
+	margin-bottom: 80px;
+	position: relative;
+	z-index: 1;
+}
+.tonni_tm_pricing .pricing_list > ul > li .plan{
+	color: #000;
+	font-family: var(--font-family-extra);
+	font-size: 20px;
+}
+.tonni_tm_pricing .pricing_list > ul > li .price{
+	color: #86756C;
+	font-size: 64px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_pricing .pricing_list > ul > li .list_inner:hover .price{
+	color: var(--extra-color);;
+}
+.tonni_tm_pricing .pricing_list > ul > li .price span{
+	position: relative;
+	display: inline-block;
+}
+.tonni_tm_pricing .pricing_list > ul > li .curreny{
+	position: absolute;
+	font-size: 24px;
+	color: var(--extra-color);;
+}
+.tonni_tm_pricing .item_list{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 1;
+}
+.tonni_tm_pricing .item_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tonni_tm_pricing .item_list ul li{
+	margin: 0px 0px 18px 0px;
+	width: 100%;
+	float: left;
+}
+.tonni_tm_pricing .item_list ul li:last-child{
+	margin-bottom: 0px;
+}
+.tonni_tm_pricing .item_list ul li.inactive p{
+	color: #B9A89F;
+}
+.tonni_tm_pricing .badge{
+	position: absolute;
+	top: -15px;
+	right: 30px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color:var(--extra-color);;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0px 20px;
+	font-weight: 600;
+	z-index: 6;
+}
+.tonni_tm_pricing .icon{
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	width: 100%;
+}
+.tonni_tm_pricing .icon .svg{
+	width: 100%;
+	height: 100%;
+	color: transparent;
+}
+.tonni_tm_pricing .tonni_tm_button{
+	position: relative;
+	z-index: 1;
+}
+.tonni_tm_pricing ul li .list_inner:hover .tonni_tm_button a{
+	color: var(--extra-color);;
+}
+.tonni_tm_pricing .shape{
+	position: absolute;
+	top: 150px;
+	right: 100%;
+	margin-right: 20px;
+}
+.tonni_tm_pricing .shape .svg{
+	width: 140px;
+	height: 140px;
+}
+.tonni_tm_pricing .shape2{
+	position: absolute;
+	top: 190px;
+	left: 100%;
+	margin-left: 90px;
+}
+.tonni_tm_pricing .shape2 .svg{
+	width: 45px;
+	height: 45px;
+	color: transparent;
+}
+
+/*---------------------------------------------------*/
+/*	10) TONNI TESTIMONIALS
+/*---------------------------------------------------*/
+
+.tonni_tm_testimonials{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 120px;
+}
+.tonni_tm_testimonials .testimonials_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.tonni_tm_testimonials .hidden_details{
+	position: absolute;
+	z-index: -111;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+}
+.tonni_tm_testimonials .leftpart{
+	width: 31.5%;
+}
+.tonni_tm_testimonials .leftpart ul{
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	overflow: hidden;
+}
+.tonni_tm_testimonials .leftpart ul li{
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	transform: translateX(100%);
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_testimonials .leftpart ul li.active{
+	position: relative;
+	transform: translateX(0);
+}
+.tonni_tm_testimonials .leftpart ul li .image{
+	position: relative;
+}
+.tonni_tm_testimonials .leftpart ul li img{
+	position: relative;
+	opacity: 0;
+	min-width: 100%;
+}
+.tonni_tm_testimonials .leftpart ul li .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+.tonni_tm_testimonials .rightpart{
+	width: 68.5%;
+	padding-left: 130px;
+}
+.tonni_tm_testimonials .rightpart_in{
+	width: 100%;
+	float: left;
+}
+.tonni_tm_testimonials .main_title{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.tonni_tm_testimonials .main_title h3{
+	font-weight: 700;
+	font-size: 106px;
+	color: rgba(138, 132, 119, 0.1);
+	line-height: 1;
+}
+.tonni_tm_testimonials .main_title .big{
+	position: relative;
+	display: inline-block;
+}
+.tonni_tm_testimonials .main_title .small{
+	position: absolute;
+	color: #000;
+	font-size: 32px;
+	left: 0px;
+	bottom: 10px;
+	z-index: 1;
+}
+.tonni_tm_testimonials .main_title .svg{
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	left: 100%;
+	margin-left: 13px;
+	bottom: -3px;
+}
+.tonni_tm_testimonials .quotes{
+	width: 100%;
+	float: left;
+	margin-bottom: 37px;
+}
+.tonni_tm_testimonials .quotes ul{
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	overflow: hidden;
+}
+.tonni_tm_testimonials .quotes ul li{
+	margin: 0px;
+	top: 0;
+	background-color: #f3f0ea;
+	position: absolute;
+	transform: translateX(100%);
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_testimonials .quotes ul li.active{
+	position: relative;
+	transform: translateX(0);
+}
+.tonni_tm_testimonials .quotes p{
+	font-size: 20px;
+	line-height: 2;
+}
+.tonni_tm_testimonials .details{
+	width: 100%;
+	float: left;
+	border-top: 1px solid rgba(0, 0, 0, 0.07);
+	padding-top: 25px;
+}
+.hidden{
+	display: none !important;
+}
+.tonni_tm_testimonials .infos{
+	display: flex;
+	align-items: center;
+}
+.tonni_tm_testimonials .avatars{
+	width:180px;
+}
+.tonni_tm_testimonials .avatars ul{
+	margin: 0px;
+	list-style-type: none;
+	display: flex;
+	padding-left: 20px;
+	position: relative;
+}
+.tonni_tm_testimonials .avatars ul li{
+	margin-left: -20px;
+	float: left;
+	cursor: pointer;
+}
+.tonni_tm_testimonials .avatars ul li:hover div{
+	transform: scale(1.4);
+}
+.tonni_tm_testimonials .avatars span{
+	display: block;
+	width: 45px;
+	height: 45px;
+	position: relative;
+	border-radius: 100%;
+	border: 1px solid #fff;
+}
+.tonni_tm_testimonials .avatars div{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 100%;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_testimonials .short{
+	padding-left: 20px;
+}
+.tonni_tm_testimonials .short .name{
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	overflow: hidden;
+}
+.tonni_tm_testimonials .short .name li{
+	margin: 0px;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_testimonials .short .name li.active{
+	position: relative;
+	left: 0;
+}
+.tonni_tm_testimonials .name h3{
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--extra-color);;
+	margin-bottom: 2px;
+}
+.tonni_tm_testimonials .short .job{
+	margin: 0px;
+	list-style-type: none;
+	position: relative;
+	overflow: hidden;
+}
+.tonni_tm_testimonials .short .job li{
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 100%;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_testimonials .short .job li.active{
+	position: relative;
+	left: 0px;
+}
+.next_button a{
+	font-family: var(--font-family-extra);
+	font-weight: 700;
+	color: #000;
+}
+.next_button .svg{
+	position: relative;
+	margin-left: 6px;
+	top: 3px;
+	color: var(--extra-color);;
+}
+.tonni_tm_testimonials .shape{
+	position: absolute;
+	right: 100%;
+	bottom: 30px;
+	margin-right: 120px;
+}
+.tonni_tm_testimonials .shape .svg{
+	color: transparent;
+	width: 45px;
+	height: 45px;
+}
+.tonni_tm_testimonials .shape2{
+	position: absolute;
+	left: 100%;
+	top: -60px;
+	margin-left: 100px;
+}
+.tonni_tm_testimonials .shape2 .svg{
+	color: transparent;
+	width: 75px;
+	height: 75px;
+}
+
+/*---------------------------------------------------*/
+/*	11) TONNI NEWS
+/*---------------------------------------------------*/
+
+.tonni_tm_news{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+.tonni_tm_news .news_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #EDE8DF;
+	padding: 110px 0px 120px 0px;
+}
+.tonni_tm_news .news_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-top: 50px;
+	position: relative;
+}
+.tonni_tm_news .news_list ul{
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+}
+.tonni_tm_news .news_list ul li{
+	margin: 0px 0px 30px 0px;
+	float: left;
+	padding-left: 30px;
+	width: 33.3333%;
+}
+.tonni_tm_news .news_list ul li .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.tonni_tm_news .news_list ul li .image{
+	position: relative;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	overflow: hidden;
+}
+.tonni_tm_news .news_list ul li .image img{
+	position: relative;
+	opacity: 0;
+	min-width: 100%;
+}
+.tonni_tm_news .news_list ul li .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: scale(1) translateZ(0);
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_news .news_list ul li .list_inner .image:hover .main{
+	transform: scale(1.1) translateZ(0);
+}
+.tonni_tm_news .news_list .details{
+	width: 100%;
+	float: left;
+	background-color: #F8F5EF;
+	box-shadow: 0px 14px 20px rgba(187, 182, 173, 0.3);
+	padding: 20px 30px 43px 50px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: relative;
+}
+.tonni_tm_news .news_list .details .date{
+	display: inline-block;
+	font-family: var(--font-family-extra);
+	font-weight: 700;
+	color: var(--extra-color);;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	position: relative;
+}
+.tonni_tm_news .news_list .details .date:before{
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.1);
+	left: -50px;
+	bottom: 10px;
+}
+.tonni_tm_news .news_list .details .date:after{
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 2px;
+	background-color: var(--extra-color);;
+	left: -50px;
+	bottom: 10px;
+	z-index: 1;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_news .news_list ul li .list_inner:hover .date:after{
+	width: 40px;
+}
+.tonni_tm_news .news_list .details .title{
+	font-size: 20px;
+	line-height: 1.5;
+}
+.tonni_tm_news .news_list .details .title a{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_news .news_list .details .title a:hover{
+	color: var(--extra-color);;
+}
+.tonni_tm_news .news_hidden_details{
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: -11;
+}
+.tonni_tm_modalbox .news_popup_informations{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.tonni_tm_modalbox .news_popup_informations .image{
+	position: relative;
+	margin-bottom: 37px;
+}
+.tonni_tm_modalbox .news_popup_informations .image img{
+	position: relative;
+	opacity: 0;
+	min-width: 100%;
+}
+.tonni_tm_modalbox .news_popup_informations .image .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 12px;
+}
+.tonni_tm_modalbox .news_popup_informations .metabox{
+	width: 100%;
+	display: flex;
+	margin-bottom: 6px;
+}
+.tonni_tm_modalbox .news_popup_informations .metabox span{
+	position: relative;
+	display: inline-block;
+	padding-left: 23px;
+	margin-left: 15px;
+}
+.tonni_tm_modalbox .news_popup_informations .metabox span:first-child{
+	margin-left: 0px;
+}
+.tonni_tm_modalbox .news_popup_informations .metabox .svg{
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #F90B0F;
+}
+.tonni_tm_modalbox .news_popup_informations .metabox a{
+	color: #988C86;
+}
+.tonni_tm_modalbox .news_popup_informations .animation_link:after{
+	bottom: 4px;
+}
+.tonni_tm_modalbox .news_popup_informations .details{
+	width: 100%;
+	float: left;
+	margin-bottom: 23px;
+}
+.tonni_tm_modalbox .news_popup_informations .details span a{
+	text-decoration: none;
+	color: #988c86;
+}
+.tonni_tm_modalbox .news_popup_informations .details span{
+	display: inline-block;
+    font-family: var(--font-family-extra);
+    font-weight: 700;
+    color: var(--extra-color);;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    position: relative;
+}
+.tonni_tm_modalbox .news_popup_informations .details h3{
+	font-size: 30px;
+}
+.tonni_tm_modalbox .news_popup_informations .text{
+	width: 100%;
+	float: left;
+}
+.tonni_tm_modalbox .news_popup_informations .text p{
+	margin-bottom: 15px;
+}
+.tonni_tm_modalbox .news_popup_informations .text p:last-child{
+	margin-bottom: 0px;
+}
+.tonni_tm_news .news_list .shape{
+	position: absolute;
+	right: 100%;
+	top: -20px;
+	margin-right: 15px;
+}
+.tonni_tm_news .news_list .shape .svg{
+	width: 145px;
+	height: 145px;
+}
+.tonni_tm_news .news_list .shape2{
+	position: absolute;
+	left: 100%;
+	top: 40px;
+	margin-left: 70px;
+}
+.tonni_tm_news .news_list .shape2 .svg{
+	width: 45px;
+	height: 45px;
+	color: transparent;
+}
+.tonni_tm_news .news_list .shape3{
+	position: absolute;
+	left: 100%;
+	bottom: 20px;
+	margin-left: 70px;
+}
+.tonni_tm_news .news_list .shape3 .svg{
+	width: 75px;
+	height: 75px;
+	color: transparent;
+}
+
+/*---------------------------------------------------*/
+/*	12) TONNI PARTNERS
+/*---------------------------------------------------*/
+
+.tonni_tm_partners{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-top: 80px;
+}
+.tonni_tm_partners .partners_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-top: 35px;
+	position: relative;
+}
+.tonni_tm_partners .shape{
+	position: absolute;
+	right: 100%;
+	bottom: -80px;
+	margin-right: 120px;
+}
+.tonni_tm_partners .shape .svg{
+	width: 45px;
+	height: 45px;
+	color: transparent;
+}
+.tonni_tm_partners .partners_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tonni_tm_partners .partners_list ul li{
+	margin: 0px;
+}
+.tonni_tm_partners .partners_list ul li img{
+	opacity: .2;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_partners .partners_list ul li:hover img{
+	opacity: 1;
+}
+.tonni_tm_partners .text{
+	width: 100%;
+	float: left;
+	text-align: center;
+	border-bottom: 1px solid rgba(22, 20, 29, 0.07);
+	padding-bottom: 50px;
+	margin-top: 8px;
+}
+.tonni_tm_partners .text a{
+	color: var(--extra-color);;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_partners .text a:hover{
+	color: #86756C;
+}
+
+/*---------------------------------------------------*/
+/*	13) TONNI CONTACT
+/*---------------------------------------------------*/
+
+.tonni_tm_contact{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: var(--extra-color);;
+	padding: 570px 0px 110px 0px;
+	position: relative;
+	margin-top: -450px;
+}
+.tonni_tm_counter_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 53px 50px 17px 50px;
+	margin-bottom: 107px;
+	position: relative;
+	z-index: 1;
+}
+.tonni_tm_counter_list ul{
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.tonni_tm_counter_list ul li{
+	margin: 0px 0px 30px 0px;
+	float: left;
+	padding-left: 50px;
+	width: 25%;
+	text-align: center;
+}
+.tonni_tm_counter_list ul li .list_inner{
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.tonni_tm_counter_list ul li .title{
+	display: inline-block;
+	max-width: 150px;
+	line-height: 1.7;
+	margin-bottom: 17px;
+}
+.tonni_tm_counter_list ul li h3{
+	font-weight: 700;
+	color: #000;
+	font-size: 48px;
+}
+.tonni_tm_contact .contact_box{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 70px;
+	position: relative;
+	z-index: 1;
+}
+.tonni_tm_contact .contact_box .title h3{
+	font-weight: 700;
+	font-size: 55px;
+	color: #fff;
+	line-height: 1.2;
+	text-transform: capitalize;
+}
+.tonni_tm_contact .contact_box .title h3 a{
+	text-decoration: none;
+	color: #fff;
+	opacity: .5;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_contact .contact_box .title h3 a:hover{
+	opacity: 1;
+}
+.tonni_tm_contact .short{
+	width: 100%;
+	float: left;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1;
+}
+.tonni_tm_contact .short .left a{
+	color: #fff;
+	opacity: .5;
+	font-size: var(--font-family-extra);
+	font-size: 30px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_contact .short .left a:hover{
+	opacity: 1;
+}
+.tonni_tm_contact .short .left span{
+	display: inline-block;
+	position: relative;
+}
+.tonni_tm_contact .short .left .svg{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 100%;
+	margin-left: 150px;
+}
+.tonni_tm_contact .short .social{
+	margin-bottom: 30px;
+}
+.tonni_tm_contact .short .social ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tonni_tm_contact .short .social ul li{
+	margin: 0px 35px 0px 0px;
+	display: inline-block;
+}
+.tonni_tm_contact .short .social ul li:last-child{
+	margin-right: 0px;
+}
+.tonni_tm_contact .short .social ul li a{
+	text-decoration: none;
+	color: #fff;
+	opacity: .3;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.tonni_tm_contact .short .social ul li a:hover{
+	opacity: 1;
+}
+.tonni_tm_contact .short .social ul li .svg{
+	width: 30px;
+	height: 30px;
+}
+.tonni_tm_contact .copyright p{
+	color: #d5a994;
+}
+.tonni_tm_contact .copyright p a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+}
+.tonni_tm_contact .shape{
+	position: absolute;
+	bottom: 0px;
+	left: -220px;
+}
+.tonni_tm_contact .shape .svg{
+	height: 900px;
+	width: 900px;
+}
+.tonni_tm_contact .shape2{
+	position: absolute;
+	bottom: 0px;
+	right: -40px;
+}
+.tonni_tm_contact .shape2 .svg{
+	height: 280px;
+	width: 280px;
+	color: transparent;
+}
+.modalbox_contact{
+	position: absolute;
+	z-index: -11;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+}
+.tonni_tm_modalbox_contact{
+	width: 100%;
+	float: left;
+}
+.tonni_tm_modalbox_contact .tonni_tm_button .svg{
+	top: 0px;
+}
+.tonni_tm_modalbox_contact .contact_title{
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+}
+.tonni_tm_modalbox_contact .contact_title h3{
+	font-size: 32px;
+	font-weight: 700;
+}
+.tonni_tm_modalbox_contact .fields{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.tonni_tm_modalbox_contact .fields .first{
+	width: 100%;
+	float: left;
+}
+.tonni_tm_modalbox_contact .fields ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tonni_tm_modalbox_contact .fields ul li{
+	width: 100%;
+	margin: 0px 0px 30px 0px;
+	float: left;
+}
+.tonni_tm_modalbox_contact .fields ul li input{
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.2);
+	background-color: transparent;
+	padding: 15px;
+	color: var(--main-color);
+	border-radius: 5px;
+	font-family: var(--font-family-extra);
+}
+.tonni_tm_modalbox_contact .fields ul li input:focus{
+	outline: none;
+	border: 1px solid rgba(0,0,0,.5);
+}
+.tonni_tm_modalbox_contact .fields .last textarea{
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.2);
+	height: 120px;
+	resize: none;
+	margin-bottom: 10px;
+	background-color: transparent;
+	padding: 15px;
+	color: var(--main-color);
+	border-radius: 5px;
+	font-family: var(--font-family-extra);
+}
+.tonni_tm_modalbox_contact .fields .last textarea:focus{
+	outline: none;
+	border: 1px solid rgba(0,0,0,.5);
+} 
+.tonni_tm_modalbox_contact .empty_notice{
+	color: #F52225;
+	margin-bottom: 7px;
+	display: none;
+	text-align: left;
+	font-weight: 500;
+}
+.tonni_tm_modalbox_contact .contact_error{
+	color: #F52225;
+	text-align: left;
+	font-weight: 500;
+}
+.tonni_tm_modalbox_contact .returnmessage{
+	color:#3A00FF;
+	margin-bottom: 7px;
+	text-align: left;
+	font-weight: 500;
+}
+.tonni_tm_map{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+.gmap_canvas{
+	border-radius: 10px;
+}
+
+/*---------------------------------------------------*/
+/*	14) TONNI MAGIC CURSOR
+/*---------------------------------------------------*/
+
+.mouse-cursor{
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+}
+.cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 100;
+  background-color: var(--extra-color);;
+  -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+  transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+}
+.cursor-inner.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--extra-color);;
+  opacity: .3;
+}
+.cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--extra-color);;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 100;
+  opacity: .5;
+  -webkit-transition: all .08s ease-out;
+  transition: all .08s ease-out;
+}
+.cursor-outer.cursor-hover{opacity: 0;}
+.tonni_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor{
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: -1111;
+}
+
+/*---------------------------------------------------*/
+/*	15) TONNI TOTOP
+/*---------------------------------------------------*/
+
+.progressbar{
+    position: fixed;
+	height: 100px;
+    width: 1px;
+	bottom: 25px;
+    right: -25px;
+    background-color: rgba(0,0,0,.08);
+    z-index: 10;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.progressbar.animate{
+	right: 25px;
+}
+.progressbar .line {
+	position: absolute;
+    width: 1px;
+	height: auto;
+    background-color: rgba(0,0,0,.4);
+}
+.progressbar .text{
+	position: absolute;
+    bottom: 100px;
+    left: 0px;
+    font-size: 13px;
+    transform: rotateZ(90deg);
+    text-transform: uppercase;
+    transform-origin: left;
+    white-space: nowrap;
+}
+.progressbar a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*---------------------------------------------------*/
+/*	GLITCH EFFECT
+/*---------------------------------------------------*/
+
+.dodo_tm_hero .glitch_wrap{
+	position: relative;
+	width: 100%;
+	height:100%;
+	float: left;
+	overflow: hidden;
+}
+.glitch{
+	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+	top: 0;
+ 	left: 0;
+	background-image: url("..//img/hero/1.jpg");
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-position: center;
+	z-index: -1 !important;
+	opacity: 1;
+	transform: scale(1);
+}
+
+/*---------------------------------------------------*/
+/*	16) TONNI MEDIA QUERIES (FOR SMALL DEVIVES)
+/*---------------------------------------------------*/
+
+@media (max-width: 1600px) {
+	.container{max-width:1150px;}
+	.tonni_tm_hero .name{font-size: 70px;}
+	.tonni_tm_hero .welcome{font-size: 17px;}
+	.tonni_tm_hero .welcome{margin-bottom: 45px;}
+	.tonni_tm_down svg{width: 45px !important;height: 45px !important;}
+	.tonni_tm_down{bottom: 3%;}
+	.tonni_tm_hero .play_button a{width: 45px;height: 45px;}
+	.tonni_tm_hero .play_button a:before{border-width: 5px 0 5px 10px;margin-left: 2px;}
+	.tonni_tm_hero .play_button{left: 20px;}
+	.tonni_tm_header .menu ul li a{padding: 16px 0px 20px 0px;}
+	.tonni_tm_header .follow ul li{margin-right: 20px;}
+	.tonni_tm_about .year h3{font-size: 360px;line-height: 270px;}
+	.tonni_tm_about .experience h3{font-size: 330px;line-height: 160px;top: 65px;}
+	.tonni_tm_about .experience p{font-size: 45px;line-height: 45px;}
+	.tonni_tm_about .right{padding-left: 40px;}
+	.tonni_tm_about .right .title{margin-bottom: 25px;}
+	.tonni_tm_about .right .text{margin-bottom: 35px;}
+	.tonni_tm_about .right .title h3{font-size: 32px;}
+	.tonni_tm_about .year .rounded{width: 230px;height: 230px;}
+	.dodo_progress .progress_inner .background{height: 22px;}
+	.dodo_progress .percent{margin-top: 8px;}
+	.tonni_tm_testimonials .quotes p{font-size: 17px;}
+	.tonni_tm_modalbox .box_inner{width: 750px;}
+	.tonni_tm_modalbox .portfolio_main_title h3{font-size: 25px;}
+	.tonni_tm_modalbox .description_wrap{padding: 40px;}
+	.tonni_tm_modalbox .description_wrap:before{height: 40px;}
+	.tonni_tm_modalbox .description_wrap:after{height: 40px;}
+	.tonni_tm_modalbox .close{margin-left: 15px;}
+	.tonni_tm_modalbox .news_popup_informations .details h3{font-size: 25px;}
+	.tonni_tm_hero .shape1{bottom: 17%;left: 2%;}
+	.tonni_tm_hero .shape1 .svg{width: 35px;height: 35px;}
+	.tonni_tm_hero .shape2{display: none;}
+	.tonni_tm_hero .shape3 .svg{width: 25px;height: 25px;}
+	.tonni_tm_hero .shape5 .svg{width: 37px;height: 37px;}
+	.tonni_tm_hero .shape5{left: 35%;}
+	.tonni_tm_hero .shape7 .svg{width: 65px;height: 65px;}
+	.tonni_tm_hero .shape6 .svg{width: 38px;height: 38px;}
+	.tonni_tm_hero .shape4 .svg{width: 38px;height: 38px;}
+	.tonni_tm_timeline .shape2 .svg{width: 110px;height: 110px;}
+	.tonni_tm_timeline .shape4 .svg{width: 35px;height: 35px;}
+	.tonni_tm_timeline .shape4{top: 280px;right: 90px;}
+	.tonni_tm_timeline .shape5 .svg{width: 60px;height: 60px;}
+	.tonni_tm_timeline .shape5{right: 90px;}
+	.tonni_tm_timeline .shape3 .svg{width: 38px;height: 38px;}
+	.tonni_tm_timeline .shape3{left: 40px;bottom: 120px;}
+	.tonni_tm_pricing .shape .svg{width: 90px;height: 90px;}
+	.tonni_tm_pricing .shape2 .svg{width: 38px;height: 38px;}
+	.tonni_tm_pricing .shape2{margin-left: 50px;}
+	.tonni_tm_testimonials .shape2 .svg{width: 60px;height: 60px;}
+	.tonni_tm_testimonials .shape2{margin-left: 35px;}
+	.tonni_tm_testimonials .shape .svg{width: 38px;height: 38px;}
+	.tonni_tm_testimonials .shape{margin-right: 60px;}
+	.tonni_tm_news .news_list .shape .svg{width: 60px;height: 60px;}
+	.tonni_tm_news .news_list .shape2 .svg{width: 38px;height: 38px;}
+	.tonni_tm_news .news_list .shape2{margin-left: 38px;}
+	.tonni_tm_partners .shape{margin-right: 30px;}
+	.tonni_tm_partners .shape .svg{width: 35px;height: 35px;}
+}
+@media (max-width: 1200px) {
+	.tonni_tm_modalbox .box_inner{width: 700px;}
+	.tonni_tm_modalbox .portfolio_main_title h3{font-size: 25px;}
+	.tonni_tm_modalbox .main_details{flex-direction: column;}
+	.tonni_tm_modalbox .main_details .textbox{padding: 0px;width: 100%;margin-bottom: 40px;}
+	.tonni_tm_modalbox .main_details .detailbox{padding: 0px;width: 100%;}
+	.tonni_tm_modalbox .additional_images ul{margin: 0px;}
+	.tonni_tm_modalbox .additional_images ul li{width: 100% !important;padding-left: 0px;}
+	.tonni_tm_modalbox .description_wrap{padding: 20px;}
+	.tonni_tm_modalbox .description_wrap:before{height: 20px;}
+	.tonni_tm_modalbox .description_wrap:after{height: 20px;}
+	.tonni_tm_modalbox .news_popup_informations .details h3{font-size: 25px;}
+	.tonni_tm_hero .shape1{display: none;}
+	.tonni_tm_hero .shape2{display: none;}
+	.tonni_tm_hero .shape3{display: none;}
+	.tonni_tm_hero .shape4{display: none;}
+	.tonni_tm_hero .shape5{display: none;}
+	.tonni_tm_hero .shape6{display: none;}
+	.tonni_tm_hero .shape7{display: none;}
+	.tonni_tm_about .left .circle_shape{display: none;}
+	.tonni_tm_timeline .shape2{display: none;}
+	.tonni_tm_timeline .shape3{display: none;}
+	.tonni_tm_timeline .shape4{display: none;}
+	.tonni_tm_timeline .shape5{display: none;}
+	.tonni_tm_pricing .shape{display: none;}
+	.tonni_tm_pricing .shape2{display: none;}
+	.tonni_tm_testimonials .shape{display: none;}
+	.tonni_tm_testimonials .shape2{display: none;}
+	.tonni_tm_news .news_list .shape{display: none;}
+	.tonni_tm_news .news_list .shape2{display: none;}
+	.tonni_tm_news .news_list .shape3{display: none;}
+	.tonni_tm_partners .shape{display: none;}
+}
+@media (max-width: 1040px) {
+	.mouse-cursor{display: none;}
+	#preloader{display: none;}
+	.container{padding: 0px 20px;}
+	.mouse-cursor{display: none;}
+	.tonni_tm_mobile_menu{display: block;} 
+	.tonni_tm_header{display: none;}
+	.tonni_tm_hero .play_button{display: none;}
+	.tonni_tm_hero .name{font-size: 80px;margin-bottom: 5px;}
+	.tonni_tm_hero .welcome{font-size: 16px;}
+	.tonni_tm_down svg{width: 30px !important;height: 30px !important;}
+	.tonni_tm_down{bottom: 2%;}
+	.tonni_tm_about .about_inner{flex-direction: column;}
+	.tonni_tm_about .left{width: 100%;margin-bottom: 50px;}
+	.tonni_tm_about .year .rounded{display: none;}
+	.tonni_tm_about .year h3{font-size: 200px;line-height: 150px;letter-spacing: 0px;}
+	.tonni_tm_about .experience{margin-left: 0px;}
+	.tonni_tm_about .experience .shape{display: none;}
+	.tonni_tm_about .experience h3{font-size: 200px;line-height: 100px;margin-bottom: 5px;top: 25px;}
+	.tonni_tm_about .experience p{font-size: 25px;line-height: 30px;}
+	.tonni_tm_about .right .title h3{font-size: 35px;}
+	.tonni_tm_about .right{width: 100%;padding: 0px;}
+	.tonni_tm_main_title[data-type="flex"]{flex-direction: column;align-items: baseline;}
+	.tonni_tm_main_title[data-type="flex"] .title{width: 100%;margin-bottom: 10px;}
+	.tonni_tm_main_title[data-type="flex"] .subtitle{width: 100%;padding-left: 0px;}
+	.tonni_tm_service .service_list ul li{width: 50%;}
+	.tonni_tm_pricing .pricing_list > ul > li{width: 50%;}
+	.tonni_tm_news .news_list ul li{width: 50%;}
+	.tonni_tm_counter_list ul li{width: 50%;}
+	.tonni_tm_contact .contact_box .title h3{font-size: 40px;}
+	.tonni_tm_contact .short{flex-direction: column;align-items: baseline;justify-content: flex-start;}
+	.tonni_tm_contact .short .left{margin-bottom: 20px;}
+	.tonni_tm_contact .short .left .svg{display: none;}
+	.tonni_tm_contact .short .left a{font-size: 23px;}
+	.tonni_tm_contact .short .social ul li{margin-right: 15px;}
+	.tonni_tm_contact .short .social ul li .svg{width: 25px;height: 25px;}
+	.tonni_tm_modalbox .box_inner{width: 300px;}
+	.tonni_tm_modalbox .close{left: auto;right: 0px;margin-left: 0px;top: -30px;}
+	.tonni_tm_modalbox .close a{width: 25px;height: 25px;}
+	.tonni_tm_modalbox .portfolio_main_title h3{font-size: 20px;}
+	.tonni_tm_modalbox .portfolio_main_title h3{margin-bottom: 0px;}
+	.tonni_tm_modalbox .news_popup_informations .details h3{font-size: 20px;}
+	.tonni_tm_modalbox_contact .contact_title h3{font-size: 30px;}
+	.tonni_tm_modalbox .news_popup_informations .image{margin-bottom: 20px;}
+	.tonni_tm_modalbox .news_popup_informations .details{margin-bottom: 13px;}
+	.tonni_tm_modalbox .popup_details .top_image{margin-bottom: 20px;}
+	.tonni_tm_modalbox .portfolio_main_title{margin-bottom: 13px;}
+	.tonni_tm_modalbox .main_details .textbox{margin-bottom: 25px;}
+	.tonni_tm_modalbox .main_details{margin-bottom: 45px;}
+}
+@media (max-width: 768px) {
+	.tonni_tm_hero .name{font-size: 55px;}
+	.tonni_tm_hero .welcome{font-size: 14px;margin-bottom: 40px;}
+	.tonni_tm_hero .welcome:before{width: 40px;}
+	.tonni_tm_about .right .title h3{font-size: 30px;}
+	.tonni_tm_about .right .title span{font-size: 16px;}
+	.dodo_progress ul{margin: 0px;}
+	.dodo_progress ul li{width: 100%;padding-left: 0px;margin-bottom: 15px;}
+	.dodo_progress .progress_inner .background{height: 10px;}
+	.tonni_tm_service .service_list ul{margin: 0px;}
+	.tonni_tm_service .service_list ul li{width: 100%;padding-left: 0px;}
+	.tonni_tm_service .service_list ul li .svg{width: 55px;height: 55px;margin-bottom: 20px;}
+	.tonni_tm_service .service_list ul li .title{margin-bottom: 25px;}
+	.tonni_tm_main_title .title h3{font-size: 27px;}
+	.tonni_tm_portfolio .portfolio_list ul{margin: 0px;}
+	.tonni_tm_portfolio .portfolio_list ul li{width: 100%;padding-left: 0px;}
+	.tonni_tm_timeline .timeline_list .line:before{display: none;}
+	.tonni_tm_timeline .timeline_list .line{display: none;}
+	.tonni_tm_timeline .timeline_list .items{flex-direction: column !important;}
+	.tonni_tm_timeline .timeline_list .items{margin: 0px;}
+	.tonni_tm_timeline .timeline_list .items li{width: 100%;padding-left: 0px;}
+	.tonni_tm_timeline .timeline_list .details{padding: 0px !important;}
+	.tonni_tm_timeline .timeline_list .items li{text-align: left !important;margin-bottom: 25px;}
+	.tonni_tm_timeline .timeline_list .items .svg{position: relative;width: 55px;height: 55px;top: 0px !important;margin-bottom: 10px;}
+	.tonni_tm_timeline .timeline_list .items .year{display: inline-block;width: auto;height: auto;line-height: 1;padding: 10px 20px;}
+	.tonni_tm_timeline .timeline_list .items li:nth-child(2){text-align: left;}
+	.tonni_tm_timeline .timeline_list > ul > li{margin-bottom: 40px;}
+	.tonni_tm_pricing .pricing_list > ul{margin: 0px;}
+	.tonni_tm_pricing .pricing_list > ul > li{width: 100%;padding-left: 0px;margin-bottom: 40px;}
+	.tonni_tm_pricing .pricing_list > ul > li.centered{margin-top: 0px;}
+	.tonni_tm_pricing .pricing_list > ul > li.centered .list_inner{padding-top: 50px;}
+	.tonni_tm_pricing .pricing_list > ul > li .price{font-size: 50px;}
+	.tonni_tm_pricing .pricing_list > ul > li .curreny{font-size: 20px;}
+	.tonni_tm_pricing .pricing_list > ul > li .list_inner{padding: 40px 20px !important;}
+	.tonni_tm_timeline .timeline_list{margin-top: 40px;}
+	.tonni_tm_testimonials .leftpart{display: none;}
+	.tonni_tm_testimonials .rightpart{padding-left: 0px;width: 100%;}
+	.tonni_tm_testimonials .main_title h3{font-size: 55px;}
+	.tonni_tm_testimonials .main_title .small{font-size: 25px;bottom: 5px;}
+	.tonni_tm_testimonials .main_title .svg{width: 35px;height: 35px;}
+	.tonni_tm_testimonials .quotes p{font-size: 16px;}
+	.tonni_tm_testimonials .infos{flex-direction: column;align-items: baseline;}
+	.tonni_tm_testimonials .avatars{margin-bottom: 20px;}
+	.tonni_tm_testimonials .short{padding-left: 0px;}
+	.tonni_tm_news .news_list ul{margin: 0px;}
+	.tonni_tm_news .news_list ul li{width: 100%;padding-left: 0px;}
+	.tonni_tm_counter_list ul{margin: 0px;}
+	.tonni_tm_counter_list ul li{width: 100%;padding-left: 0px;}
+	.tonni_tm_counter_list ul li h3{font-size: 43px;}
+	.tonni_tm_contact .contact_box .title h3{font-size: 30px;}
+}
