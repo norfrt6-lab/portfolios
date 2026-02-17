@@ -44,3 +44,6 @@ To get started with these portfolio templates, clone the repository and choose y
 1. Clone this repository
 2. Navigate to your chosen template folder
 3. Open index.html in your browser
+
+## Credits
+Special thanks to all the designers and developers who contributed to these templates.
