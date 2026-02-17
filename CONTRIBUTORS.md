@@ -57,6 +57,9 @@ Guidelines for integrating external APIs and services.
 ## Mobile Optimization
 Best practices for mobile-first responsive design.
 
+## SEO Guidelines
+Search engine optimization best practices for portfolio sites.
+
 ## Testing
 All templates include testing documentation.
 
