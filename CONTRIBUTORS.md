@@ -48,6 +48,9 @@ To get started with these portfolio templates, clone the repository and choose y
 ## Credits
 Special thanks to all the designers and developers who contributed to these templates.
 
+## Localization
+Adding internationalization and localization support for global users.
+
 ## Testing
 All templates include testing documentation.
 
