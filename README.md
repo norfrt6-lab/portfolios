@@ -16,6 +16,27 @@ Professional HTML portfolio template with multiple versions:
 - Typed text animation variants
 - Video background options
 
+## Installation
+
+### Quick Start
+
+1. Clone the repository:
+```bash
+git clone https://github.com/norfrt6-lab/portfolios.git
+cd portfolios
+```
+
+2. Choose a template from the available options
+
+3. Open the template's `index.html` file in your browser
+
+### Using a Template
+
+1. Navigate to the template directory
+2. Copy the template files to your project
+3. Customize the content to match your needs
+4. Deploy to your preferred hosting platform
+
 ## Getting Started
 
 Browse the templates in the subdirectories and choose the one that fits your needs.
