@@ -59,3 +59,6 @@ Performance optimizations included.
 
 ## Documentation
 Comprehensive documentation provided.
+
+## Accessibility
+WCAG 2.1 compliance guidelines followed.
