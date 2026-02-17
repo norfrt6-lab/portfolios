@@ -1,0 +1,57 @@
+// Font URL
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"');
+// @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap');
+// Font Family
+$theme-fonts: (
+    body: (
+        font-family: "'Urbanist',sans-serif",
+    ),
+    heading: (
+        font-family: "'Urbanist',sans-serif",
+    ),
+    display: (
+        font-family: "'Urbanist',sans-serif",
+    ),
+);
+// Font Size
+$font-size: (
+    body: (
+        font-size: 16px,
+    ),
+    fs: (
+        1: 40px,
+        2: 33px,
+        3: 28px,
+        4: 23px,
+        5: 19px,
+        6: 16px,
+        7: 14px,
+        8: 12px,
+    ),
+    ds: (
+        1: 80px,
+        2: 72px,
+        3: 64px,
+    ),
+);
+// Line Height
+$theme-lh: (
+    body: (
+        line-height: 1.5,
+    ),
+    heading: (
+        line-height: 1.2,
+    ),
+);
+// Font Weight
+$font-weight: (
+    fw: (
+        black: 900,
+        extra-bold: 800,
+        bold: 700,
+        semi-bold: 600,
+        medium: 500,
+        regular: 400,
+        light: 300,
+    ),
+);

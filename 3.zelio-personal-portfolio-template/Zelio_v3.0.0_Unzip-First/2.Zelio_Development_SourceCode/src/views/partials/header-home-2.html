@@ -1,0 +1,42 @@
+<!-- Navbar -->
+<header>
+    <div class="container position-relative">
+        <div class="position-relative">
+            <nav class="navbar navbar-expand-lg @@classList flex-nowrap z-999 p-0 border border-1 rounded-3">
+                <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                    <i class="ri-menu-2-line"></i>
+                </a>
+                <div class="container py-3 px-4">
+                    <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                        <img src="assets/imgs/home-page-2/template/favicon.svg" alt="zelio" />
+                        <span class="fs-4 ms-2">James.dev</span>
+                    </a>
+                    <div class="d-none d-lg-flex">@@include("main-menu-2.html")</div>
+                    <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                        <div class="d-md-flex d-none gap-3">
+                            <a href="http://facebook.com">
+                                <i class="ri-facebook-circle-fill fs-18"></i>
+                            </a>
+                            <a href="http://twitter.com">
+                                <i class="ri-twitter-x-fill fs-18"></i>
+                            </a>
+                            <a href="http://linkedin.com">
+                                <i class="ri-linkedin-fill fs-18"></i>
+                            </a>
+                            <a href="http://github.com">
+                                <i class="ri-github-fill fs-18"></i>
+                            </a>
+                        </div>
+                        <div class="burger-icon burger-icon-white border rounded-3">
+                            <span class="burger-icon-top"></span>
+                            <span class="burger-icon-mid"></span>
+                            <span class="burger-icon-bottom"></span>
+                        </div>
+                    </div>
+                </div>
+                @@include("dark-light-switcher.html")
+            </nav>
+        </div>
+        @@include("offcanvas-2.html") @@include("mobile-menu.html")
+    </div>
+</header>

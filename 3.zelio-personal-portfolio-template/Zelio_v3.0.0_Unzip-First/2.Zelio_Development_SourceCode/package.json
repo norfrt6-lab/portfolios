@@ -1,0 +1,26 @@
+{
+    "name": "zelio-bootstrap-dev",
+    "version": "3.0.0",
+    "description": "Gulp development tasks",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "dev": "gulp dev",
+        "build": "gulp build"
+    },
+    "devDependencies": {
+        "browser-sync": "^3.0.2",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-clean": "^0.4.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-file-include": "^2.3.0",
+        "gulp-format-html": "^2.3.0",
+        "gulp-html-beautify": "^1.0.1",
+        "gulp-once": "^2.1.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "prettier": "^3.2.4",
+        "sass": "^1.62.1"
+    }
+}
