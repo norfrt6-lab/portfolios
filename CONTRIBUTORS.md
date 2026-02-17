@@ -50,3 +50,6 @@ Special thanks to all the designers and developers who contributed to these temp
 
 ## Testing
 All templates include testing documentation.
+
+## Security
+Security best practices are implemented in all templates.
