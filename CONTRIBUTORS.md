@@ -54,6 +54,9 @@ Adding internationalization and localization support for global users.
 ## API Integration
 Guidelines for integrating external APIs and services.
 
+## Mobile Optimization
+Best practices for mobile-first responsive design.
+
 ## Testing
 All templates include testing documentation.
 
