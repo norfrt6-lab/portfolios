@@ -68,9 +68,17 @@ Browse the templates in the subdirectories and choose the one that fits your nee
 
 This project is maintained by a team of 3 developers.
 
+## Support
+
+- 📖 [FAQ](FAQ.md) - Frequently Asked Questions
+- 🔧 [Troubleshooting](TROUBLESHOOTING.md) - Common issues and solutions
+- 🚀 [Deployment Guide](DEPLOYMENT.md) - How to deploy your portfolio
+- 🤝 [Contributing](CONTRIBUTING.md) - How to contribute
+- 🗺️ [Roadmap](ROADMAP.md) - Future plans
+
 ## License
 
-Please check individual template licenses in their respective directories.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Template Previews
 Preview images coming soon!
